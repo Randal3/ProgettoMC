@@ -1397,7 +1397,7 @@ GameObject:
   - component: {fileID: 9105966635156447917}
   - component: {fileID: 588448371577139395}
   m_Layer: 31
-  m_Name: pavimento
+  m_Name: Pavimento
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
