@@ -630,10 +630,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 0d00d2b7-2e53-44ef-bcc4-d087bf97ca70
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: ProgettoMC
+  organizationId: yousef_99
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
