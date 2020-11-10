@@ -5,8 +5,8 @@ using UnityEngine;
 public class cambioStanza : MonoBehaviour
 {
     public Vector3 playerChange;
-    public GameObject stanza1; 
-    public GameObject stanza2;
+    public GameObject Attivazione; 
+    public GameObject Disattivazione;
 
     // Start is called before the first frame update
     void Start()
@@ -26,8 +26,8 @@ public class cambioStanza : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             collision.transform.position += playerChange;
-            stanza1.SetActive(true);
-            stanza2.SetActive(false);
+            Attivazione.SetActive(true);
+            Disattivazione.SetActive(false);
         }
     }
 
