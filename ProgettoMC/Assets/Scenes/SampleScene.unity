@@ -203,7 +203,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.099594235, y: 0.23189616}
+  m_Offset: {x: 0.0043693483, y: -0.6103096}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -214,7 +214,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.26015818, y: 1.4670846}
+  m_Size: {x: 0.9631545, y: 0.81703115}
   m_EdgeRadius: 0
 --- !u!114 &142887415
 MonoBehaviour:
@@ -7802,7 +7802,7 @@ GameObject:
   - component: {fileID: 664037390}
   - component: {fileID: 664037389}
   m_Layer: 0
-  m_Name: MensaCorridoio2
+  m_Name: Mensa2CorridoioII
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7816,7 +7816,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 664037387}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.25, y: 13.37, z: 21.248709}
+  m_LocalPosition: {x: 18.25, y: 13.1, z: 21.248709}
   m_LocalScale: {x: 2.0139875, y: 1.3496498, z: 1}
   m_Children: []
   m_Father: {fileID: 2006026505}
@@ -7835,7 +7835,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.099594235, y: 0.23189616}
+  m_Offset: {x: 0.00054720044, y: 0.36095333}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7846,7 +7846,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.26015818, y: 1.4670846}
+  m_Size: {x: 0.98846346, y: 0.5025493}
   m_EdgeRadius: 0
 --- !u!114 &664037390
 MonoBehaviour:
@@ -8248,7 +8248,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727587074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.93, y: 11.25, z: -6.357422}
+  m_LocalPosition: {x: 1.19, y: -0.16, z: -6.357422}
   m_LocalScale: {x: 1, y: 2.005166, z: 1}
   m_Children:
   - {fileID: 519420032}
@@ -9315,7 +9315,7 @@ TilemapCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
@@ -9336,9 +9336,53 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths: []
+  m_ColliderPaths:
+  - m_Collider: {fileID: 1145321129}
+    m_ColliderPaths:
+    - - X: 155624992
+        Y: 155000000
+      - X: 210000000
+        Y: 155000000
+      - X: 210000000
+        Y: 160000000
+      - X: 160000000
+        Y: 160000000
+      - X: 160000000
+        Y: 320000000
+      - X: 300000000
+        Y: 320000000
+      - X: 300000000
+        Y: 160000000
+      - X: 230000000
+        Y: 160000000
+      - X: 230000000
+        Y: 155000000
+      - X: 304375008
+        Y: 155000000
+      - X: 305624992
+        Y: 156250000
+      - X: 305624992
+        Y: 350000000
+      - X: 154375008
+        Y: 350000000
+      - X: 154375008
+        Y: 156250000
   m_CompositePaths:
-    m_Paths: []
+    m_Paths:
+    - - {x: 20.999971, y: 15.5}
+      - {x: 20.999971, y: 16}
+      - {x: 16, y: 16.000029}
+      - {x: 16.000029, y: 32}
+      - {x: 30, y: 31.999971}
+      - {x: 29.999971, y: 16}
+      - {x: 23, y: 15.999971}
+      - {x: 23.000029, y: 15.5}
+      - {x: 30.437508, y: 15.500009}
+      - {x: 30.5625, y: 15.625011}
+      - {x: 30.562471, y: 35}
+      - {x: 15.437501, y: 34.999973}
+      - {x: 15.437509, y: 15.624992}
+      - {x: 15.5625105, y: 15.5}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!50 &1145321131
@@ -12123,7 +12167,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1785959196
 Transform:
   m_ObjectHideFlags: 0
