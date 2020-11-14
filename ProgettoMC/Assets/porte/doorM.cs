@@ -22,6 +22,7 @@ public class doorM : MonoBehaviour
         {
             animator.SetBool("open", true);
             gameObject.layer = 0;
+
         }
         else
         {
