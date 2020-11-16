@@ -23,7 +23,7 @@ public class cambioStanza : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") || collision.CompareTag("enemy"))
         {
             collision.transform.position += playerChange;
             Attivazione.SetActive(true);
