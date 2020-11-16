@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class BoxAppoggio : MonoBehaviour
 {
+    public GameObject chiave;
     public Transform holder;
     public string Tag;
     public string nuovoTag;
-
     // Update is called once per frame
     void Update()
     {
-        if (holder.transform.parent == null)
+        if (Input.GetKey(KeyCode.Y))
         {
-            Debug.Log("La chiave ci sta");
-        }
-        else
-        {
-            Debug.Log("La chiave NO");
+            if(holder.transform.childCount == 3 && holder.transform.GetChild(0).gameObject.transform.tag == nuovoTag && holder.transform.GetChild(1).gameObject.transform.tag == nuovoTag)
+            {
+                chiave.SetActive(true);
+            }
         }
     }
 
