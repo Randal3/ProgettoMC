@@ -11,7 +11,7 @@ public class Grab : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RaycastHit2D grabCheck = Physics2D.Raycast(grabDetect.position, Vector2.right * transform.localScale, rayDist);
+        RaycastHit2D grabCheck = Physics2D.Raycast(grabDetect.position,Vector2.right * transform.localScale, rayDist);
 
         if(grabCheck.collider != null && grabCheck.collider.CompareTag("ChiaveAttiva"))
         {
