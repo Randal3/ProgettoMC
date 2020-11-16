@@ -29,14 +29,4 @@ public class MovimentoPlayer : MonoBehaviour
     {
         myRigidbody.MovePosition(transform.position + change * speed);
     }
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        Debug.Log("Funziona");
-        //Check the provided Collider2D parameter other to see if it is tagged "PickUp", if it is...
-        if (other.gameObject.CompareTag("PickUp"))
-
-            //... then set the other object we just collided with to inactive.
-            other.gameObject.SetActive(false);
-
-    }
 }

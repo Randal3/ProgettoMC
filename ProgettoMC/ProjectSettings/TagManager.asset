@@ -4,8 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - enemy
-  - PickUp
+  - Bottone_indizio
   layers:
   - Default
   - TransparentFX
@@ -15,7 +14,7 @@ TagManager:
   - UI
   - 
   - 
-  - obstacle
+  - 
   - 
   - 
   - 
@@ -46,6 +45,6 @@ TagManager:
   - name: Ground
     uniqueID: 94076909
     locked: 0
-  - name: canvas
+  - name: New Layer
     uniqueID: 3583973749
     locked: 0

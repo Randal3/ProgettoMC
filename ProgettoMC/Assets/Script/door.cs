@@ -17,8 +17,7 @@ public class door : MonoBehaviour
     void Update()
     {
         float y = target.position.y;
-        float x = target.position.x;
-        if (y > 3 && y < 9.5 && x > 20 && x < 24.2)
+        if (y > 2.20)
         {
             animator.SetBool("open", true);
         }
