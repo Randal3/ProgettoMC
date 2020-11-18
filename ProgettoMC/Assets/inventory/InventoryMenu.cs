@@ -5,7 +5,7 @@ using UnityEngine;
 public class InventoryMenu : MonoBehaviour
 {
     [SerializeField] private GameObject Inventory;
-    [SerializeField] private bool activate;
+    [SerializeField] private bool activate = false;
     // Start is called before the first frame update
     void Start()
     {
