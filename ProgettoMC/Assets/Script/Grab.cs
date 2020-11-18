@@ -19,13 +19,13 @@ public class Grab : MonoBehaviour
             {
                 grabCheck.collider.gameObject.transform.parent = boxHolder;
                 grabCheck.collider.gameObject.transform.position = boxHolder.position;
+                grabCheck.collider.gameObject.transform.GetChild(0).GetComponent<BoxCollider2D>().isTrigger = true;
             }
             else
             {
+                grabCheck.collider.gameObject.transform.GetChild(0).GetComponent<BoxCollider2D>().isTrigger = false;
                 grabCheck.collider.gameObject.transform.parent = null;
             }
         }
-
-
     }
 }
