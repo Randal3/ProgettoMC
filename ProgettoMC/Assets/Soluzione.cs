@@ -26,7 +26,7 @@ public class Soluzione : MonoBehaviour
             Debug.Log("3");
             youWin = true;
             game.SetActive(false);
-            player.SetActive(true);
+            
         }
     }
 }

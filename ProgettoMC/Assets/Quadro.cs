@@ -23,7 +23,7 @@ public class Quadro : MonoBehaviour
         if(Input.GetKey(KeyCode.B) && playerInrange)
         { 
             Debug.Log("2");
-            player.SetActive(false);
+            
             game.SetActive(true);
            
 
