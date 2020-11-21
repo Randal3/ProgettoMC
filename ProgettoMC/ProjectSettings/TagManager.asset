@@ -6,6 +6,7 @@ TagManager:
   tags:
   - enemy
   - PickUp
+  - Bottone_indizio
   layers:
   - Default
   - TransparentFX
