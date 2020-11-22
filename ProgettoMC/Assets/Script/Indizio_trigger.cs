@@ -7,12 +7,10 @@ public class Indizio_trigger : MonoBehaviour
 {
     public GameObject indizio;
     private GameObject button_Indizio;
-    private GameObject button_Close;
 
     // Start is called before the first frame update
     void Start()
     {
-        button_Close = GameObject.Find("Close");
         button_Indizio = GameObject.Find("Indizio");
     }
 
