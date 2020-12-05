@@ -7,6 +7,8 @@ TagManager:
   - enemy
   - PickUp
   - Bottone_indizio
+  - ChiaveAttiva
+  - ChiaveDisattiva
   layers:
   - Default
   - TransparentFX
