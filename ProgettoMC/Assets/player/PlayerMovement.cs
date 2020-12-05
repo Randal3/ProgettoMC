@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D myRigidbody;
     private Vector3 change;
     private Animator animator;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
-
+    
     private void movimento()
     {
         animator.SetBool("isMoving", true);
