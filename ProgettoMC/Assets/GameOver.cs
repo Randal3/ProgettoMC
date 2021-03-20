@@ -23,6 +23,7 @@ public class GameOver : MonoBehaviour
     }
     void Restart()
     {
+        
         SceneManager.LoadScene("SampleScene");
     }
 }
