@@ -9,6 +9,7 @@ TagManager:
   - Bottone_indizio
   - ChiaveAttiva
   - ChiaveDisattiva
+  - libreria
   layers:
   - Default
   - TransparentFX
