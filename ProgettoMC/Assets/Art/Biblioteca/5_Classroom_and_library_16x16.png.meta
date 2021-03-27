@@ -2462,6 +2462,12 @@ TextureImporter:
   - first:
       213: 2350572359806282968
     second: 5_Classroom_and_library_16x16_409
+  - first:
+      213: -4077015830624251920
+    second: 5_Classroom_and_library_16x16_410
+  - first:
+      213: 655849265754298789
+    second: 5_Classroom_and_library_16x16_411
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -11164,6 +11170,48 @@ TextureImporter:
       bones: []
       spriteID: 8dcea1d7b19ee9020800000000000000
       internalID: 2350572359806282968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5_Classroom_and_library_16x16_410
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 480
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff4ff7f3b78b67c0800000000000000
+      internalID: -4077015830624251920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5_Classroom_and_library_16x16_411
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 464
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a95c7fae6b0a1900800000000000000
+      internalID: 655849265754298789
       vertices: []
       indices: 
       edges: []
