@@ -18,10 +18,12 @@ public class Soluzione : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(pictures[2].rotation.eulerAngles.z);
+        Debug.Log(pictures[4].rotation.eulerAngles.z);
         if (pictures[0].rotation.eulerAngles.z == 180 &&
             pictures[1].rotation.eulerAngles.z == 0 &&
-            pictures[2].rotation.eulerAngles.z == 90 )
+            pictures[2].rotation.eulerAngles.z == 180 &&
+            pictures[3].rotation.eulerAngles.z == 270 &&
+            pictures[4].rotation.eulerAngles.z == 270)
         {
             Debug.Log("3");
             youWin = true;

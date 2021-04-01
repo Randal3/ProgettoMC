@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class doorM : MonoBehaviour
+public class DoorM : MonoBehaviour
 {
     private Animator animator;
     private Transform target;
