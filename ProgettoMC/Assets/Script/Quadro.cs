@@ -7,6 +7,7 @@ public class Quadro : MonoBehaviour
    
     public GameObject player;
     public GameObject game;
+    public Camera camera;
     public bool playerInrange;
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class Quadro : MonoBehaviour
             Debug.Log("2");
             
             game.SetActive(true);
+            camera.enabled = false;
            
 
 
