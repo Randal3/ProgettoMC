@@ -4,23 +4,69 @@ using UnityEngine;
 
 public class BoxAppoggio : MonoBehaviour
 {
-    public GameObject chiave;
-    public Transform holder;
     public string Tag;
     public string nuovoTag;
-    private Vector3 distanziatore = new Vector3(0,0,0);
-    public Vector3 Incremento;
     private bool active;
+    private int completo = 0;
+    public bool indovinelloFinito = false;
+    public GameObject libro1;
+    public GameObject libro2;
+    public GameObject libro3;
+    public Transform holder1;
+    public Transform holder2;
+    public Transform holder3;
+    public Transform holder4;
+    public Transform holder5;
+    public Transform holder6;
 
+    private void Start()
+    {
+        int count = Random.Range(1, 8);
+        switch (count)
+        {
+            case 1:
+                libro1.transform.position = holder1.position;
+                libro2.transform.position = holder2.position;
+                libro3.transform.position = holder3.position;
+                break;
+
+            case 2:
+                libro1.transform.position = holder2.position;
+                libro2.transform.position = holder3.position;
+                libro3.transform.position = holder4.position;
+                break;
+
+            case 3:
+                libro1.transform.position = holder3.position;
+                libro2.transform.position = holder4.position;
+                libro3.transform.position = holder5.position;
+                break;
+
+            case 4:
+                libro1.transform.position = holder4.position;
+                libro2.transform.position = holder5.position;
+                libro3.transform.position = holder6.position;
+                break;
+
+            case 5:
+                libro1.transform.position = holder1.position;
+                libro2.transform.position = holder3.position;
+                libro3.transform.position = holder5.position;
+                break;
+
+            case 6:
+                libro1.transform.position = holder2.position;
+                libro2.transform.position = holder4.position;
+                libro3.transform.position = holder6.position;
+                break;
+        }
+    }
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Y) && active)
+        if (completo == 3)
         {
-            if (holder.transform.childCount == 3 && holder.transform.GetChild(0).gameObject.transform.tag == nuovoTag && holder.transform.GetChild(1).gameObject.transform.tag == nuovoTag)
-            {
-                chiave.SetActive(true);
-            }
+            indovinelloFinito = true;
         }
     }
 
@@ -29,9 +75,8 @@ public class BoxAppoggio : MonoBehaviour
         if (collision.CompareTag(Tag))
         {
             collision.gameObject.tag = nuovoTag;
-            collision.gameObject.transform.parent = holder;
-            collision.gameObject.transform.position = holder.position + distanziatore;
-            distanziatore = distanziatore + Incremento;   
+            collision.gameObject.SetActive(false);
+            if (collision.CompareTag(nuovoTag)) completo++;
         }
         if (collision.CompareTag("Player"))
         {
