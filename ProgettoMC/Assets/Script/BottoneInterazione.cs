@@ -27,10 +27,10 @@ public class BottoneInterazione : MonoBehaviour
                 grabCheck.collider.gameObject.transform.GetChild(0).GetComponent<BoxCollider2D>().isTrigger = true;
         }
 
-        if (grabCheck.collider == null)
+      /*  else
         {
             grabCheck.collider.gameObject.transform.GetChild(0).GetComponent<BoxCollider2D>().isTrigger = false;
             grabCheck.collider.gameObject.transform.parent = null;
-        }
+        }*/
     }
 }
