@@ -18,6 +18,7 @@ public class BoxAppoggio : MonoBehaviour
     public Transform holder4;
     public Transform holder5;
     public Transform holder6;
+    public GameObject bottone;
 
     private void Start()
     {
@@ -80,6 +81,7 @@ public class BoxAppoggio : MonoBehaviour
         }
         if (collision.CompareTag("Player"))
         {
+            bottone.SetActive(false);
             active = true;
         }
     }

@@ -1217,6 +1217,7 @@ MonoBehaviour:
   holder4: {fileID: 1411876516}
   holder5: {fileID: 1125069891}
   holder6: {fileID: 81500955}
+  bottone: {fileID: 2106053582}
 --- !u!1 &69763078
 GameObject:
   m_ObjectHideFlags: 0
