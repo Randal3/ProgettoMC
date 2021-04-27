@@ -9,8 +9,8 @@ public class BottoneInterazione : MonoBehaviour
     public Transform boxDetect;
     public Transform boxHolder;
     public float rayDist;
-
-    public static event Action<string> ButtonPressed = delegate { };
+    public static bool preso = false;
+    public GameObject bottone;
 
     void Start()
     {
@@ -22,15 +22,18 @@ public class BottoneInterazione : MonoBehaviour
 
         if (grabCheck.collider != null && grabCheck.collider.CompareTag("ChiaveAttiva"))
         {
+            if (preso == false) {
+                preso = true;
                 grabCheck.collider.gameObject.transform.parent = boxHolder;
                 grabCheck.collider.gameObject.transform.position = boxHolder.position;
-                grabCheck.collider.gameObject.transform.GetChild(0).GetComponent<BoxCollider2D>().isTrigger = true;
+                bottone.SetActive(true);
+            }
+            else
+            {
+                grabCheck.collider.gameObject.transform.parent = null;
+                preso = false;
+                bottone.SetActive(false);
+            }
         }
-
-      /*  else
-        {
-            grabCheck.collider.gameObject.transform.GetChild(0).GetComponent<BoxCollider2D>().isTrigger = false;
-            grabCheck.collider.gameObject.transform.parent = null;
-        }*/
     }
 }
