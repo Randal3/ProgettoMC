@@ -5,30 +5,18 @@ using UnityEngine.UI;
 
 public class Indizio_bottone : MonoBehaviour
 {
-    private GameObject indizi;
-    private GameObject bottone_close;
+    public GameObject game;
+    public Camera camera;
+    public bool playerInrange;
     // Start is called before the first frame update
     void Start()
     {
-        bottone_close = GameObject.Find("Close");
-        indizi = GameObject.Find("Oggetti_Canvas");
+        gameObject.GetComponent<Button>().onClick.AddListener(ButtonClicked);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void ButtonClicked()
     {
-
+        game.SetActive(true);
+        camera.enabled = false;
     }
-
-    public void Guarda_Indizio() { 
-        Image[] ts = indizi.gameObject.GetComponentsInChildren<Image>();
-        foreach (Image t in ts)
-        {
-            if (t != null && t.gameObject != null)
-                t.gameObject.GetComponent<Image>().enabled = true;
-        }
-        bottone_close.gameObject.GetComponent<Image>().enabled = true;
-        bottone_close.gameObject.GetComponent<Button>().enabled = true;
-
     }
-}
