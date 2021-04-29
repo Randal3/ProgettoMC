@@ -10,6 +10,7 @@ TagManager:
   - ChiaveAttiva
   - ChiaveDisattiva
   - libreria
+  - joystick
   layers:
   - Default
   - TransparentFX
