@@ -26,7 +26,7 @@ public class DisplayIndo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerInrange && Input.GetKey(KeyCode.B))
+        if (playerInrange)
         {
             game.SetActive(true);
         }

@@ -29639,8 +29639,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 20.400024, y: 142.6}
-  m_SizeDelta: {x: -563.41583, y: -324.40607}
+  m_AnchoredPosition: {x: 0, y: 192}
+  m_SizeDelta: {x: -563.41583, y: -498.61212}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &709726827
 MonoBehaviour:
@@ -30732,7 +30732,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -69752,7 +69752,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 3
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -69971,9 +69971,8 @@ Tilemap:
   - m_RefCount: 19
     m_Data: {fileID: -4319277014277005771, guid: 48df10859f1d95b43a9aa362a8d7397d,
       type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -5284491129521315876, guid: 5d665537a869ca84da85faaba42b55cb,
-      type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 19
     m_Data: {fileID: 2841968076266082576, guid: 48df10859f1d95b43a9aa362a8d7397d,
       type: 3}
@@ -69983,8 +69982,9 @@ Tilemap:
   - m_RefCount: 12
     m_Data: {fileID: 4878588445532407111, guid: 48df10859f1d95b43a9aa362a8d7397d,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -5284491129521315876, guid: 5d665537a869ca84da85faaba42b55cb,
+      type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 7665041475698998823, guid: 5d665537a869ca84da85faaba42b55cb,
       type: 3}

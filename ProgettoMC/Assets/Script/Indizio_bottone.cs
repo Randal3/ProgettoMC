@@ -2,26 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class Indizio_bottone : MonoBehaviour
 {
-    public GameObject game;
-    public GameObject but_ret; //pulsante di return
-    private GameObject joystick;
-    public Camera camera;
+    private GameObject indizi;
+    private GameObject bottone_close;
     // Start is called before the first frame update
     void Start()
     {
-        joystick = GameObject.FindGameObjectWithTag("joystick");
-        gameObject.GetComponent<Button>().onClick.AddListener(ButtonClicked);
+        bottone_close = GameObject.Find("Close");
+        indizi = GameObject.Find("Oggetti_Canvas");
     }
-
-    private void ButtonClicked()
+    // Update is called once per frame
+    void Update()
     {
-        but_ret.SetActive(true);
-        game.SetActive(true);
-        camera.enabled = false;
-        joystick.SetActive(false);
-        gameObject.SetActive(false);
     }
+    public void Guarda_Indizio()
+    {
+        Image[] ts = indizi.gameObject.GetComponentsInChildren<Image>();
+        foreach (Image t in ts)
+        {
+            if (t != null && t.gameObject != null)
+                t.gameObject.GetComponent<Image>().enabled = true;
+        }
+        bottone_close.gameObject.GetComponent<Image>().enabled = true;
+        bottone_close.gameObject.GetComponent<Button>().enabled = true;
     }
+}
