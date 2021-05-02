@@ -17,6 +17,66 @@ TextureImporter:
   - first:
       213: 8643040676318551613
     second: Sphere_4
+  - first:
+      213: -5699633380553079849
+    second: Sphere_0
+  - first:
+      213: 1673870697420848229
+    second: Sphere_1
+  - first:
+      213: 3839587761138307700
+    second: Sphere_2
+  - first:
+      213: 1833719581798359657
+    second: Sphere_3
+  - first:
+      213: 262929171365870036
+    second: Sphere_4
+  - first:
+      213: -1249920818312157718
+    second: Sphere_5
+  - first:
+      213: 7703698693282308037
+    second: Sphere_6
+  - first:
+      213: -5279743522531817145
+    second: Sphere_7
+  - first:
+      213: -6937760036676811645
+    second: Sphere_8
+  - first:
+      213: 9177986960817280948
+    second: Sphere_9
+  - first:
+      213: 3353491702528820257
+    second: Sphere_10
+  - first:
+      213: -3806261970663933951
+    second: Sphere_11
+  - first:
+      213: 6729911237402710637
+    second: Sphere_12
+  - first:
+      213: 3090887172360985825
+    second: Sphere_13
+  - first:
+      213: -1556995139320357137
+    second: Sphere_14
+  - first:
+      213: 7122277743449436052
+    second: Sphere_15
+  - first:
+      213: -3359160134888717954
+    second: Sphere_16
+  - first:
+      213: -3191053909397356438
+    second: Sphere_17
+  - first:
+      213: 1100203465471714205
+    second: Sphere_18
+  - first:
+      213: 1471915897256313094
+    second: Sphere_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -60,7 +120,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -134,6 +194,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -152,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c40602b7b3b36d060800000000000000
-      internalID: 6977829799311990860
+      spriteID: 7d3cc2a63a5d6e0b0800000000000000
+      internalID: -5699633380553079849
       vertices: []
       indices: 
       edges: []
@@ -173,8 +245,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00248799b6aadaea0800000000000000
-      internalID: -5859840161026129408
+      spriteID: 56c74bfd788ca3710800000000000000
+      internalID: 1673870697420848229
       vertices: []
       indices: 
       edges: []
@@ -194,8 +266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bce21ba216d549c0800000000000000
-      internalID: -3943510523025101639
+      spriteID: 472169ac9b4f84530800000000000000
+      internalID: 3839587761138307700
       vertices: []
       indices: 
       edges: []
@@ -215,8 +287,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b26587ff5f938df20800000000000000
-      internalID: 3447569243467961899
+      spriteID: 962e4c28e3ea27910800000000000000
+      internalID: 1833719581798359657
       vertices: []
       indices: 
       edges: []
@@ -236,8 +308,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3e183bc3bf32f770800000000000000
-      internalID: 8643040676318551613
+      spriteID: 4d9b95430bc16a300800000000000000
+      internalID: 262929171365870036
       vertices: []
       indices: 
       edges: []
