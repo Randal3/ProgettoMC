@@ -16,8 +16,6 @@ public class Bottone_EsciDaArmadietto : MonoBehaviour
     void Start()
     {
         esci = GameObject.Find("Bottone_EsciDaArmadietto");
-        this.ultima_posizione = GameObject.Find("Last_Player_Position").transform;
-        analogico.SetActive(false);
         gameObject.GetComponent<Button>().onClick.AddListener(ButtonClicked);
     }
 
@@ -29,6 +27,7 @@ public class Bottone_EsciDaArmadietto : MonoBehaviour
 
     private void ButtonClicked()
     {
+        this.ultima_posizione = GameObject.Find("Last_Player_Position").transform;
         this.player_posizione.position = this.ultima_posizione.position;
         analogico.SetActive(true);
         esci.gameObject.GetComponent<Image>().enabled = false;

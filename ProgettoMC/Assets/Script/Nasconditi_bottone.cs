@@ -6,6 +6,7 @@ using System;
 
 public class Nasconditi_bottone : MonoBehaviour
 {
+    public GameObject analogico;
     public Transform nascondiglio;
     public Transform player_posizione;
     public GameObject bottone;
@@ -16,7 +17,6 @@ public class Nasconditi_bottone : MonoBehaviour
     void Start()
     {
         esci = GameObject.Find("Bottone_EsciDaArmadietto");
-        this.posizioneDaRicordare.position = this.player_posizione.position;
         gameObject.GetComponent<Button>().onClick.AddListener(ButtonClicked);
     }
 
@@ -28,6 +28,8 @@ public class Nasconditi_bottone : MonoBehaviour
 
     private void ButtonClicked()
     {
+        this.posizioneDaRicordare.position = this.player_posizione.position;
+        analogico.SetActive(false);
         this.player_posizione.position = this.nascondiglio.position;
         esci.gameObject.GetComponent<Image>().enabled = true;
         esci.gameObject.GetComponent<Button>().enabled = true;
