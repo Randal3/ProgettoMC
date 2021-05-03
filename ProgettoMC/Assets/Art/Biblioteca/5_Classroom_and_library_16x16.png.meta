@@ -2468,6 +2468,9 @@ TextureImporter:
   - first:
       213: 655849265754298789
     second: 5_Classroom_and_library_16x16_411
+  - first:
+      213: -7669495493200676880
+    second: 5_Classroom_and_library_16x16_412
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -11240,6 +11243,27 @@ TextureImporter:
       bones: []
       spriteID: 5a95c7fae6b0a1900800000000000000
       internalID: 655849265754298789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5_Classroom_and_library_16x16_412
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 392
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f77051db7a709590800000000000000
+      internalID: -7669495493200676880
       vertices: []
       indices: 
       edges: []
