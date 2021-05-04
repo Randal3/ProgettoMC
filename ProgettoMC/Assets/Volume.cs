@@ -10,7 +10,7 @@ public class Volume : MonoBehaviour
 
     void Start()
     {
-        Audio = GetComponent<AudioSource>();
+       // Audio = GetComponent<AudioSource>();
     }
 
     public void SetVolume(float volume)
