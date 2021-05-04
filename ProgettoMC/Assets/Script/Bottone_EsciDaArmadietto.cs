@@ -32,5 +32,6 @@ public class Bottone_EsciDaArmadietto : MonoBehaviour
         analogico.SetActive(true);
         esci.gameObject.GetComponent<Image>().enabled = false;
         esci.gameObject.GetComponent<Button>().enabled = false;
+        soundManager.PlaySound("esci");
     }
 }
