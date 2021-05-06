@@ -75,7 +75,7 @@ public class BoxAppoggio : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             bottone.SetActive(false);
-            active = true;
+            this.active = true;
         }
     }
 
@@ -83,7 +83,7 @@ public class BoxAppoggio : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            active = false;
+            this.active = false;
         }
     }
 
