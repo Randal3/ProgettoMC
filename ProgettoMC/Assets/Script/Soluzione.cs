@@ -8,6 +8,7 @@ public class Soluzione : MonoBehaviour
     public Transform[] pictures;
     public GameObject player;
     public GameObject game;
+    public GameObject but;
     public Camera camera;
     public bool open;
     public GameObject libro1;
@@ -34,6 +35,7 @@ public class Soluzione : MonoBehaviour
             youWin = true;
             game.SetActive(false);
             camera.enabled = true;
+            but.SetActive(false);
             if (cont == false)
             {
                 libro1.SetActive(true);
