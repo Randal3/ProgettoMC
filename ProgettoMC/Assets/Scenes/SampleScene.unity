@@ -1323,7 +1323,6 @@ MonoBehaviour:
   Tag: ChiaveAttiva
   nuovoTag: ChiaveDisattiva
   indovinelloFinito: 0
-  libro1: {fileID: 1559677786}
   libro2: {fileID: 1951177314}
   libro3: {fileID: 1717780343}
   holder1: {fileID: 955732315}
@@ -16363,7 +16362,6 @@ GameObject:
   - component: {fileID: 393158883}
   - component: {fileID: 393158882}
   - component: {fileID: 393158881}
-  - component: {fileID: 393158880}
   - component: {fileID: 393158885}
   m_Layer: 0
   m_Name: PortaM
@@ -16386,18 +16384,6 @@ Transform:
   m_Father: {fileID: 1602585530}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &393158880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393158878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e46a6f277c5e6e0428232dca2f645efd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &393158881
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56196,6 +56182,7 @@ MonoBehaviour:
   game: {fileID: 313268705}
   camera: {fileID: 1505331222}
   open: 0
+  libro1: {fileID: 1559677786}
 --- !u!114 &1373252983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61602,7 +61589,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1559677787
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61688,7 +61675,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559677786}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -33.0426, y: 1.386, z: 200.98193}
+  m_LocalPosition: {x: -31.13, y: 37.47, z: 200.98193}
   m_LocalScale: {x: 0.894557, y: 1.0617476, z: 1}
   m_Children: []
   m_Father: {fileID: 1297147053}

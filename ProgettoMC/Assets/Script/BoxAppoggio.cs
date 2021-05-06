@@ -9,7 +9,6 @@ public class BoxAppoggio : MonoBehaviour
     private bool active;
     private int completo = 0;
     public bool indovinelloFinito = false;
-    public GameObject libro1;
     public GameObject libro2;
     public GameObject libro3;
     public Transform holder1;
@@ -26,37 +25,31 @@ public class BoxAppoggio : MonoBehaviour
         switch (count)
         {
             case 1:
-                libro1.transform.position = holder1.position;
                 libro2.transform.position = holder2.position;
                 libro3.transform.position = holder3.position;
                 break;
 
             case 2:
-                libro1.transform.position = holder2.position;
                 libro2.transform.position = holder3.position;
                 libro3.transform.position = holder4.position;
                 break;
 
             case 3:
-                libro1.transform.position = holder3.position;
-                libro2.transform.position = holder4.position;
+                libro2.transform.position = holder2.position;
                 libro3.transform.position = holder5.position;
                 break;
 
             case 4:
-                libro1.transform.position = holder4.position;
-                libro2.transform.position = holder5.position;
+                libro2.transform.position = holder1.position;
                 libro3.transform.position = holder6.position;
                 break;
 
             case 5:
-                libro1.transform.position = holder1.position;
                 libro2.transform.position = holder3.position;
-                libro3.transform.position = holder5.position;
+                libro3.transform.position = holder1.position;
                 break;
 
             case 6:
-                libro1.transform.position = holder2.position;
                 libro2.transform.position = holder4.position;
                 libro3.transform.position = holder6.position;
                 break;

@@ -10,10 +10,14 @@ public class Soluzione : MonoBehaviour
     public GameObject game;
     public Camera camera;
     public bool open;
+    public GameObject libro1;
+    private bool cont;
+
     // Start is called before the first frame update
     void Start()
     {
         youWin = false;
+        cont = false;
     }
 
     // Update is called once per frame
@@ -27,11 +31,15 @@ public class Soluzione : MonoBehaviour
             pictures[4].rotation.eulerAngles.z == 270 &&
             pictures[5].rotation.eulerAngles.z == 0)
         {
-            Debug.Log("3");
             youWin = true;
             game.SetActive(false);
             camera.enabled = true;
-            
+            if (cont == false)
+            {
+                libro1.SetActive(true);
+                cont= true;
+            }
+
         }
     }
 }
