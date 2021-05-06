@@ -24,7 +24,8 @@ public class Soluzione : MonoBehaviour
     void Update()
     {
         if (pictures[0].rotation.eulerAngles.z == 180 &&
-            pictures[1].rotation.eulerAngles.z == 0 &&
+            (pictures[1].rotation.eulerAngles.z == 0 ||
+            pictures[1].rotation.eulerAngles.z == 180) &&
             pictures[2].rotation.eulerAngles.z == 180 && 
            (pictures[3].rotation.eulerAngles.z == 0 ||
             pictures[3].rotation.eulerAngles.z == 270 ) &&
