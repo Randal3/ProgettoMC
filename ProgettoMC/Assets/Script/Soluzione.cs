@@ -13,6 +13,8 @@ public class Soluzione : MonoBehaviour
     public bool open;
     public GameObject libro1;
     private bool cont;
+    public GameObject enemy;
+    public Transform spawn;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +40,8 @@ public class Soluzione : MonoBehaviour
             but.SetActive(false);
             if (cont == false)
             {
+                enemy.transform.position = spawn.transform.position;
+                enemy.SetActive(true);
                 libro1.SetActive(true);
                 cont= true;
             }
