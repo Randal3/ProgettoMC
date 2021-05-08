@@ -11,6 +11,10 @@ public class DigitalDisplay : MonoBehaviour
     public GameObject game;
     private string codeSequences;
     int j = 0;
+
+    public GameObject enemy;
+    public Transform spawn;
+
     void Start()
     {
         codeSequences = "";
@@ -131,6 +135,8 @@ public class DigitalDisplay : MonoBehaviour
     {
         if (codeSequences == "10013130101211312" )
         {
+            enemy.transform.position = spawn.transform.position;
+            enemy.SetActive(true);
             Debug.Log("Correct!");
             game.SetActive(false);
         }
