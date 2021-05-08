@@ -19,6 +19,9 @@ public class BoxAppoggio : MonoBehaviour
     public Transform holder6;
     public GameObject bottone;
 
+    public GameObject enemy;
+    public Transform spawn;
+
     private void Start()
     {
         int count = Random.Range(1, 8);
@@ -60,6 +63,8 @@ public class BoxAppoggio : MonoBehaviour
     {
         if (completo == 3)
         {
+            enemy.transform.position = spawn.transform.position;
+            enemy.SetActive(true);
             indovinelloFinito = true;
         }
     }
