@@ -35,7 +35,7 @@ public class Wire : MonoBehaviour
                 if (transform.parent.name.Equals(collider.transform.parent.name))
                 {
                     // count connection
-                    Main.Instance.SwitchChange(1);
+                    Wire_Game.Instance.SwitchChange(1);
 
                     // finish step
                     collider.GetComponent<Wire>()?.Done();
@@ -75,6 +75,7 @@ public class Wire : MonoBehaviour
 
         // update scale
         float dist = Vector2.Distance(startPoint, newPosition);
+        
         wireEnd.size = new Vector2(dist, wireEnd.size.y);
 
     }
