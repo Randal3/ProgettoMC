@@ -7,6 +7,7 @@ public class cambioStanza : MonoBehaviour
     public Vector3 playerChange;
     public GameObject Attivazione; 
     public GameObject Disattivazione;
+    public GameObject Luce;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,12 @@ public class cambioStanza : MonoBehaviour
             collision.transform.position += playerChange;
             Attivazione.SetActive(true);
             Disattivazione.SetActive(false);
+            if (Luci.luci == false)
+            {
+                Luce.SetActive(true);
+                Debug.Log("Luceeee");
+            }
+                
         }
     }
 

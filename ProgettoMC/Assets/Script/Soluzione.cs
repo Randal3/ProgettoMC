@@ -44,6 +44,7 @@ public class Soluzione : MonoBehaviour
                 enemy.SetActive(true);
                 libro1.SetActive(true);
                 cont= true;
+                Luci.luci = true;
             }
 
         }

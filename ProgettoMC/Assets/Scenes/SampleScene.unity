@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 10161274}
   m_Layer: 0
   m_Name: Luci
-  m_TagString: Untagged
+  m_TagString: Luci
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6103,6 +6103,7 @@ MonoBehaviour:
   playerChange: {x: -3, y: 0, z: 0}
   Attivazione: {fileID: 1907575866}
   Disattivazione: {fileID: 1602585528}
+  Luce: {fileID: 991442872}
 --- !u!23 &120906142
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8003,6 +8004,7 @@ MonoBehaviour:
   playerChange: {x: 0, y: 6, z: 0}
   Attivazione: {fileID: 180650663}
   Disattivazione: {fileID: 1602585528}
+  Luce: {fileID: 297110423}
 --- !u!23 &142887416
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8157,6 +8159,7 @@ MonoBehaviour:
   playerChange: {x: -3, y: 0, z: 0}
   Attivazione: {fileID: 1298563378}
   Disattivazione: {fileID: 1602585528}
+  Luce: {fileID: 907433905}
 --- !u!23 &155908456
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12512,6 +12515,7 @@ MonoBehaviour:
   playerChange: {x: 3, y: 0, z: 0}
   Attivazione: {fileID: 990553525}
   Disattivazione: {fileID: 1602585528}
+  Luce: {fileID: 10161273}
 --- !u!23 &190582241
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15919,7 +15923,7 @@ GameObject:
   - component: {fileID: 297110424}
   m_Layer: 0
   m_Name: Luci
-  m_TagString: Untagged
+  m_TagString: Luci
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18865,6 +18869,7 @@ MonoBehaviour:
   playerChange: {x: 3, y: 0, z: 0}
   Attivazione: {fileID: 1602585528}
   Disattivazione: {fileID: 2059763287}
+  Luce: {fileID: 1141844686}
 --- !u!23 &457110011
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18987,6 +18992,7 @@ MonoBehaviour:
   playerChange: {x: 3, y: 0, z: 0}
   Attivazione: {fileID: 1492356670}
   Disattivazione: {fileID: 1602585528}
+  Luce: {fileID: 1701022662}
 --- !u!23 &470726903
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23676,6 +23682,7 @@ MonoBehaviour:
   playerChange: {x: -3, y: 0, z: 0}
   Attivazione: {fileID: 2059763287}
   Disattivazione: {fileID: 1602585528}
+  Luce: {fileID: 1722116411}
 --- !u!23 &500111167
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29026,6 +29033,7 @@ MonoBehaviour:
   playerChange: {x: 3, y: 0, z: 0}
   Attivazione: {fileID: 1602585528}
   Disattivazione: {fileID: 1508567394}
+  Luce: {fileID: 1141844686}
 --- !u!23 &552172116
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29222,6 +29230,7 @@ MonoBehaviour:
   playerChange: {x: -3, y: 0, z: 0}
   Attivazione: {fileID: 1602585528}
   Disattivazione: {fileID: 1492356670}
+  Luce: {fileID: 1141844686}
 --- !u!23 &560672051
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31814,6 +31823,7 @@ MonoBehaviour:
   playerChange: {x: 0, y: -6, z: 0}
   Attivazione: {fileID: 1602585528}
   Disattivazione: {fileID: 180650663}
+  Luce: {fileID: 1141844686}
 --- !u!23 &664037391
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32068,7 +32078,7 @@ GameObject:
   - component: {fileID: 694838947}
   m_Layer: 0
   m_Name: Luci
-  m_TagString: Untagged
+  m_TagString: Luci
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32104,7 +32114,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &707669524
 Transform:
   m_ObjectHideFlags: 0
@@ -32370,6 +32380,7 @@ MonoBehaviour:
   playerChange: {x: 3, y: 0, z: 0}
   Attivazione: {fileID: 1602585528}
   Disattivazione: {fileID: 1081789603}
+  Luce: {fileID: 1141844686}
 --- !u!23 &715953144
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33193,7 +33204,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735350190}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.04, y: -3.17, z: 0}
+  m_LocalPosition: {x: -20.2, y: 28.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1505331219}
@@ -41991,7 +42002,7 @@ GameObject:
   - component: {fileID: 907433906}
   m_Layer: 0
   m_Name: Luci
-  m_TagString: Untagged
+  m_TagString: Luci
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42086,6 +42097,7 @@ MonoBehaviour:
   playerChange: {x: 3, y: 0, z: 0}
   Attivazione: {fileID: 1602585528}
   Disattivazione: {fileID: 1907575866}
+  Luce: {fileID: 1141844686}
 --- !u!23 &912700956
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45096,7 +45108,7 @@ GameObject:
   - component: {fileID: 991442873}
   m_Layer: 0
   m_Name: Luci
-  m_TagString: Untagged
+  m_TagString: Luci
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45982,6 +45994,7 @@ MonoBehaviour:
   playerChange: {x: -3, y: 0, z: 0}
   Attivazione: {fileID: 2119694576}
   Disattivazione: {fileID: 1602585528}
+  Luce: {fileID: 1229581788}
 --- !u!23 &1096838494
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48481,7 +48494,7 @@ GameObject:
   - component: {fileID: 1141844687}
   m_Layer: 0
   m_Name: Luci
-  m_TagString: Untagged
+  m_TagString: Luci
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51231,7 +51244,7 @@ GameObject:
   - component: {fileID: 1229581789}
   m_Layer: 0
   m_Name: Luci
-  m_TagString: Untagged
+  m_TagString: Luci
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67770,6 +67783,7 @@ MonoBehaviour:
   playerChange: {x: -3, y: 0, z: 0}
   Attivazione: {fileID: 1508567394}
   Disattivazione: {fileID: 1602585528}
+  Luce: {fileID: 694838946}
 --- !u!23 &1615435676
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -69065,7 +69079,7 @@ GameObject:
   - component: {fileID: 1701022663}
   m_Layer: 0
   m_Name: Luci
-  m_TagString: Untagged
+  m_TagString: Luci
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69381,7 +69395,7 @@ GameObject:
   - component: {fileID: 1722116412}
   m_Layer: 0
   m_Name: Luci
-  m_TagString: Untagged
+  m_TagString: Luci
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69761,6 +69775,7 @@ MonoBehaviour:
   playerChange: {x: 3, y: 0, z: 0}
   Attivazione: {fileID: 1602585528}
   Disattivazione: {fileID: 2119694576}
+  Luce: {fileID: 1141844686}
 --- !u!23 &1766411669
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -69955,6 +69970,7 @@ MonoBehaviour:
   playerChange: {x: -3, y: 0, z: 0}
   Attivazione: {fileID: 1602585528}
   Disattivazione: {fileID: 990553525}
+  Luce: {fileID: 1141844686}
 --- !u!23 &1784272495
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -70087,7 +70103,7 @@ GameObject:
   - component: {fileID: 1791131102}
   m_Layer: 0
   m_Name: Luci
-  m_TagString: Untagged
+  m_TagString: Luci
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73789,6 +73805,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1859688861}
+  - component: {fileID: 1859688862}
   m_Layer: 0
   m_Name: Indovinelli
   m_TagString: Untagged
@@ -73812,6 +73829,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1859688862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859688860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78ee10a8514de704c9c1ed077f2c4f71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  corridoio: {fileID: 1141844686}
+  player: {fileID: 1060383894}
+  allarme: {fileID: 707669523}
 --- !u!1 &1861336485
 GameObject:
   m_ObjectHideFlags: 0
@@ -74437,7 +74469,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1907575867
 Transform:
   m_ObjectHideFlags: 0
@@ -77072,6 +77104,7 @@ MonoBehaviour:
   playerChange: {x: -3, y: 0, z: 0}
   Attivazione: {fileID: 1081789603}
   Disattivazione: {fileID: 1602585528}
+  Luce: {fileID: 1791131101}
 --- !u!23 &2027057290
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -86948,6 +86981,7 @@ MonoBehaviour:
   playerChange: {x: 3, y: 0, z: 0}
   Attivazione: {fileID: 1602585528}
   Disattivazione: {fileID: 1298563378}
+  Luce: {fileID: 1141844686}
 --- !u!1 &2129734607
 GameObject:
   m_ObjectHideFlags: 0

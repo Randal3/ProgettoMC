@@ -32,6 +32,7 @@ public class Wire_Game : MonoBehaviour
         {
             //winText.SetActive(true);
             Debug.Log("U WIN");
+            Luci.luci = false;
         }
     }
 }
