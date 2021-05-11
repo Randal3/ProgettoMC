@@ -135,16 +135,21 @@ public class DigitalDisplay : MonoBehaviour
     {
         if (codeSequences == "10013130101211312" )
         {
-            enemy.transform.position = spawn.transform.position;
-            enemy.SetActive(true);
+            
             Debug.Log("Correct!");
-            game.SetActive(false);
+            Invoke("Correct", 0.5f);
         }
         else
         {
             Debug.Log("Wrong!");
             ResetDisplay();
         }
+    }
+    private void Correct()
+    {
+        game.SetActive(false);
+        enemy.transform.position = spawn.transform.position;
+        enemy.SetActive(true);
     }
     private void ResetDisplay()
     {
