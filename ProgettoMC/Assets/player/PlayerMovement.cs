@@ -22,10 +22,10 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //change.x = joystick.Horizontal;
-      // change.y = joystick.Vertical;
-        change.x = Input.GetAxisRaw("Horizontal");
-        change.y = Input.GetAxisRaw("Vertical");
+        change.x = joystick.Horizontal;
+      change.y = joystick.Vertical;
+       // change.x = Input.GetAxisRaw("Horizontal");
+       // change.y = Input.GetAxisRaw("Vertical");
         if (change != Vector3.zero) {
             animator.SetFloat("X", change.x);
             animator.SetFloat("Y", change.y);
