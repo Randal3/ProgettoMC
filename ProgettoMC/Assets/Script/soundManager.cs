@@ -5,7 +5,7 @@ using UnityEngine;
 public class soundManager : MonoBehaviour
 {
 
-    public static AudioClip entraSound, esciSound;
+    public static AudioClip entraSound, esciSound, heavyBreathing;
     static AudioSource audioSrc;
 
     // Start is called before the first frame update
@@ -13,6 +13,7 @@ public class soundManager : MonoBehaviour
     {
         entraSound = Resources.Load<AudioClip>("entraSound");
         esciSound = Resources.Load<AudioClip>("esciSound");
+        heavyBreathing = Resources.Load<AudioClip>("heavyBreathing");
 
         audioSrc = GetComponent<AudioSource>();
     }
@@ -28,8 +29,10 @@ public class soundManager : MonoBehaviour
         {
             case "entra":
                 audioSrc.PlayOneShot(entraSound);
+                audioSrc.PlayOneShot(heavyBreathing);
                 break;
             case "esci":
+                audioSrc.Stop();
                 audioSrc.PlayOneShot(esciSound);
                 break;
         }
