@@ -6,7 +6,7 @@ public class BoxAppoggio : MonoBehaviour
 {
     public string Tag;
     public string nuovoTag;
-    private bool active;
+    //private bool active;
     private int completo = 0;
     public bool indovinelloFinito = false;
     public GameObject libro2;
@@ -18,7 +18,7 @@ public class BoxAppoggio : MonoBehaviour
     public Transform holder5;
     public Transform holder6;
     public GameObject bottone;
-
+    int cont = 0;
     public GameObject enemy;
     public Transform spawn;
 
@@ -63,9 +63,14 @@ public class BoxAppoggio : MonoBehaviour
     {
         if (completo == 3)
         {
-            enemy.transform.position = spawn.transform.position;
-            enemy.SetActive(true);
-            indovinelloFinito = true;
+            if (cont == 0) {
+                enemy.transform.position = spawn.transform.position;
+                enemy.SetActive(true);
+                indovinelloFinito = true;
+
+                Luci.luci = true;
+                cont++;
+            }
         }
     }
 
@@ -80,7 +85,7 @@ public class BoxAppoggio : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             bottone.SetActive(false);
-            this.active = true;
+            //this.active = true;
         }
     }
 
@@ -88,7 +93,7 @@ public class BoxAppoggio : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            this.active = false;
+            //this.active = false;
         }
     }
 

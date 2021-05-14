@@ -37,6 +37,7 @@ public class Combinazione_Quadro : MonoBehaviour
             enemy.SetActive(true);
             key.gameObject.SetActive(true);
             gestoreIndovinelli.GetComponent<Gestore_Indovinelli>().setIndovinelli(numeroIndovinello);
+            Luci.luci = true;
         }
 
         if (codeTextValue.Length >= 4)
