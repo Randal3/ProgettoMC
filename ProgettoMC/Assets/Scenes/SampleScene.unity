@@ -7852,7 +7852,7 @@ Transform:
   m_LocalScale: {x: 105, y: 105, z: 89.0795}
   m_Children: []
   m_Father: {fileID: 313268706}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &140800778
 BoxCollider2D:
@@ -16545,6 +16545,7 @@ GameObject:
   - component: {fileID: 313268709}
   - component: {fileID: 313268708}
   - component: {fileID: 313268707}
+  - component: {fileID: 313268710}
   m_Layer: 0
   m_Name: indovinelloPuzzle
   m_TagString: Untagged
@@ -16572,9 +16573,9 @@ RectTransform:
   - {fileID: 862583245}
   - {fileID: 1278374136}
   - {fileID: 2073146154}
+  - {fileID: 1147178221}
   - {fileID: 140800777}
   - {fileID: 2064742931}
-  - {fileID: 1147178221}
   - {fileID: 651488881}
   - {fileID: 961307565}
   - {fileID: 118187496}
@@ -16654,6 +16655,28 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 10
   m_TargetDisplay: 0
+--- !u!114 &313268710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313268705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fc0a28315653b740ac3896330571d57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pictures:
+  - {fileID: 1850934160}
+  - {fileID: 1847519514}
+  - {fileID: 862583245}
+  - {fileID: 1278374136}
+  - {fileID: 2073146154}
+  - {fileID: 140800777}
+  - {fileID: 2064742931}
+  - {fileID: 1147178221}
+  - {fileID: 651488881}
 --- !u!1 &315187192
 GameObject:
   m_ObjectHideFlags: 0
@@ -19296,7 +19319,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -29695,7 +29718,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -31079,7 +31102,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!58 &639699034
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41190,7 +41213,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: f141f548884fa73499687dfd8bb0a038, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -44975,7 +44998,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: -191325319279622235, guid: 41736a9c4ab014047ab647a35859a919,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -49579,7 +49602,7 @@ Transform:
   m_LocalScale: {x: 105, y: 105, z: 89.0795}
   m_Children: []
   m_Father: {fileID: 313268706}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1147178222
 BoxCollider2D:
@@ -76956,7 +76979,7 @@ Transform:
   m_GameObject: {fileID: 2030624021}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.03, y: -0.07, z: 0}
-  m_LocalScale: {x: 0.845598, y: 0.88770103, z: 1}
+  m_LocalScale: {x: 0.37153038, y: 0.39002922, z: 0.43937}
   m_Children: []
   m_Father: {fileID: 639699038}
   m_RootOrder: 0
@@ -77115,7 +77138,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -85091,7 +85114,7 @@ Transform:
   m_LocalScale: {x: 105, y: 105, z: 89.079506}
   m_Children: []
   m_Father: {fileID: 313268706}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2064742932
 BoxCollider2D:
