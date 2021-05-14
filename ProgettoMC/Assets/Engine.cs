@@ -18,8 +18,9 @@ public class Engine : MonoBehaviour
     // Update is called once per frame
     private void ButtonClicked()
     {
-        if (Wire_Game.Instance.win)
+        if (Wire_Game.Instance.but)
         {
+            Debug.Log("ciao");
             interfaccia.SetActive(true);
             player.SetActive(true);
             Wire.SetActive(false);
