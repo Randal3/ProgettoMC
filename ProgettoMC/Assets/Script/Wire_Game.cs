@@ -6,14 +6,22 @@ using UnityEngine.SceneManagement;
 public class Wire_Game : MonoBehaviour
 {
     static public Wire_Game Instance;
-    public  bool but = false;
+    public  GameObject left;
+    public  GameObject right;
+    private  GameObject rightc;
+    private  GameObject leftc;
+    public  GameObject cointer;
+
+    public bool but = false;
+
+    public bool win = false;
     public int switchCount;
     //public GameObject winText;
     private int onCount = 0;
-
-    private void Awake()
+    void Awake()
     {
         Instance = this;
+        Clone();
     }
    
     public void SwitchChange(int points)
@@ -26,13 +34,30 @@ public class Wire_Game : MonoBehaviour
         if (onCount == switchCount)
             but = !but;
     }
-    private void Update()
+     void Update()
     {
         if (onCount == switchCount && but == true)
         {
-            //winText.SetActive(true);
             Debug.Log("U WIN");
             Luci.luci = false;
+            but = false;
+            onCount = 0;
         }
+    }
+    public void Clone()
+    {
+            Debug.Log("SEi forte");
+            rightc= Instantiate(right,right.transform.position, right.transform.localRotation);
+            leftc = Instantiate(left,left.transform);
+            rightc.transform.parent = cointer.transform;
+            leftc.transform.parent = cointer.transform;
+            rightc.transform.localScale = new Vector3(1, 1, 1);
+            rightc.SetActive(true);
+            leftc.SetActive(true);
+    }
+    public  void Restart()
+    {
+        Destroy(rightc);
+        Destroy(leftc);
     }
 }
