@@ -16,7 +16,11 @@ public class Libreria : MonoBehaviour
     {
         if (Soluzione.youWin == true)
         {
-            animator.SetBool("trovato", true);
+            Invoke("Active", 1);
         }
+    }
+    void Active()
+    {
+        animator.SetBool("trovato", true);
     }
 }
