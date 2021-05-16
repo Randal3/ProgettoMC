@@ -41,7 +41,7 @@ public class Wire_Game : MonoBehaviour
         {
             win = true;
             Debug.Log("U WIN");
-            Luci.luci = false;
+           // Luci.luci = false;
             but = false;
             onCount = 0;
         }

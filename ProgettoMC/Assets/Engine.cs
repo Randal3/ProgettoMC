@@ -20,6 +20,7 @@ public class Engine : MonoBehaviour
     {
         if (Wire_Game.Instance.but)
         {
+            Luci.luci = false;
             Debug.Log("ciao");
             interfaccia.SetActive(true);
             player.SetActive(true);

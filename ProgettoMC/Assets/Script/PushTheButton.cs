@@ -10,11 +10,12 @@ public class PushTheButton : MonoBehaviour
     private string buttonName;
 
     void Start()
-    {
+    { 
         buttonName = gameObject.name;
         gameObject.GetComponent<Button>().onClick.AddListener(ButtonClicked);
     }
     private void ButtonClicked() {
+        Debug.Log("33");
         ButtonPressed(buttonName);
     }
 }

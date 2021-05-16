@@ -26,6 +26,7 @@ public class DigitalDisplay : MonoBehaviour
     }
     private void AddDigitToCodeSequences(string digitEntered)
     {
+        Debug.Log("22");
         if (codeSequences.Length < 20)
         {
             switch (digitEntered)
