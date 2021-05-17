@@ -5,6 +5,7 @@ using UnityEngine;
 public class Libreria : MonoBehaviour
 {
     private Animator animator;
+    public AudioSource audio;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,11 +17,12 @@ public class Libreria : MonoBehaviour
     {
         if (Soluzione.youWin == true)
         {
-            Invoke("Active", 1);
+            Invoke("Active", 2);
         }
     }
     void Active()
     {
+        audio.Play();
         animator.SetBool("trovato", true);
     }
 }

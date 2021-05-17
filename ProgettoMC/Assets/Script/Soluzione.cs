@@ -8,8 +8,9 @@ public class Soluzione : MonoBehaviour
     public Transform[] pictures;
     public GameObject player;
     public GameObject game;
-    public GameObject but;
-    public Camera camera;
+    public GameObject retun;
+   // public GameObject but;
+    public GameObject joystick;
     public bool open;
     public GameObject libro1;
     private bool cont;
@@ -26,8 +27,6 @@ public class Soluzione : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("2:" + pictures[0].rotation.eulerAngles.z);
-        Debug.Log("4:" + pictures[1].rotation.eulerAngles.z);
         if ((pictures[0].rotation.eulerAngles.z == 180 || pictures[0].rotation.eulerAngles.z <= 10) &&
              pictures[1].rotation.eulerAngles.z == 0 &&
              pictures[2].rotation.eulerAngles.z == 180 && 
@@ -37,8 +36,11 @@ public class Soluzione : MonoBehaviour
         {
             youWin = true;
             game.SetActive(false);
-            camera.enabled = true;
-            but.SetActive(false);
+            player.SetActive(true);
+            //camera.enabled = true;
+           // but.SetActive(true);
+            joystick.SetActive(true);
+            retun.SetActive(false);
             if (cont == false)
             {
                 enemy.transform.position = spawn.transform.position;
