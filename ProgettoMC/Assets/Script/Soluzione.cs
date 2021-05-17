@@ -27,7 +27,7 @@ public class Soluzione : MonoBehaviour
     void Update()
     {
         if ((pictures[0].rotation.eulerAngles.z == 180 || pictures[0].rotation.eulerAngles.z <= 10) &&
-             pictures[1].rotation.eulerAngles.z == 0 &&
+             pictures[1].rotation.eulerAngles.z <= 10 &&
              pictures[2].rotation.eulerAngles.z == 180 && 
             (pictures[3].rotation.eulerAngles.z <= 10 || pictures[3].rotation.eulerAngles.z == 180 ) &&
              pictures[4].rotation.eulerAngles.z == 180 &&

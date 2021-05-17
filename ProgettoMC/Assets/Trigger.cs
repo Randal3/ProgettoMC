@@ -20,6 +20,11 @@ public class Trigger : MonoBehaviour
             button.SetActive(true);
             n = 2;
         }
+        else if (collision.gameObject.name == "object")
+        {
+            button.SetActive(true);
+            n = 3;
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -28,6 +33,10 @@ public class Trigger : MonoBehaviour
             button.SetActive(false);
         }
         else if (collision.gameObject.name == "Object1")
+        {
+            button.SetActive(false);
+        }
+        else if (collision.gameObject.name == "object")
         {
             button.SetActive(false);
         }

@@ -10,6 +10,7 @@ public class Buttone : MonoBehaviour
     public GameObject Pausa;
     public GameObject Puzzle;
     public GameObject Pc;
+    public GameObject Lavagna;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,10 @@ public class Buttone : MonoBehaviour
                 break;
             case 2:
                 Pc.SetActive(true);
+                gameObject.SetActive(false);
+                break;
+            case 3:
+                Lavagna.SetActive(true);
                 joystick.SetActive(false);
                 retur.SetActive(true);
                 Pausa.SetActive(false);

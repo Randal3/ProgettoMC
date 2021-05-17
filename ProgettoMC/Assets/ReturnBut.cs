@@ -10,6 +10,7 @@ public class ReturnBut : MonoBehaviour
     public GameObject Pausa;
     public GameObject Puzzle;
     public GameObject Pc;
+    public GameObject Lavagna;
     void Start()
     {
         gameObject.GetComponent<Button>().onClick.AddListener(ButtonClicked);
@@ -17,6 +18,7 @@ public class ReturnBut : MonoBehaviour
 
     private void ButtonClicked()
     {
+
         switch (Trigger.n)
         {
             case 1:
@@ -27,6 +29,12 @@ public class ReturnBut : MonoBehaviour
                 break;
             case 2:
                 Pc.SetActive(false);
+                joystick.SetActive(true);
+                retur.SetActive(false);
+                Pausa.SetActive(true);
+                break;
+            case 3:
+                Lavagna.SetActive(false);
                 joystick.SetActive(true);
                 retur.SetActive(false);
                 Pausa.SetActive(true);
