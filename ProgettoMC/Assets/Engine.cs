@@ -7,7 +7,8 @@ using System;
 public class Engine : MonoBehaviour
 {
     public GameObject player;
-    public GameObject interfaccia;
+    public GameObject joystick;
+    public GameObject Pause;
     public GameObject Wire;
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,8 @@ public class Engine : MonoBehaviour
         {
             Luci.luci = false;
             Debug.Log("ciao");
-            interfaccia.SetActive(true);
+            Pause.SetActive(true);
+            joystick.SetActive(true);
             player.SetActive(true);
             Wire.SetActive(false);
             Wire_Game.Instance.Restart();

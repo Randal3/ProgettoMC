@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class Buttone : MonoBehaviour
 {
     public GameObject joystick;
+    public GameObject player;
     public GameObject retur;        // tutti i buttoni 
     public GameObject Pausa;
     public GameObject Puzzle;
     public GameObject Pc;
     public GameObject Lavagna;
+    public GameObject Wire;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,7 @@ public class Buttone : MonoBehaviour
                 joystick.SetActive(false);
                 retur.SetActive(true);
                 Pausa.SetActive(false);
+                player.SetActive(false);
                 gameObject.SetActive(false);
                 break;
             case 2:
@@ -38,6 +41,14 @@ public class Buttone : MonoBehaviour
                 retur.SetActive(true);
                 Pausa.SetActive(false);
                 gameObject.SetActive(false);
+                break;
+            case 4:
+                Wire.SetActive(true);
+                gameObject.SetActive(false);
+                joystick.SetActive(false);
+                retur.SetActive(true);
+                player.SetActive(false);
+                Pausa.SetActive(false);
                 break;
         }
     }

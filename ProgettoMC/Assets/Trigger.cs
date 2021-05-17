@@ -25,6 +25,11 @@ public class Trigger : MonoBehaviour
             button.SetActive(true);
             n = 3;
         }
+        else if (collision.gameObject.name == "warning")
+        {
+            button.SetActive(true);
+            n = 4;
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -37,6 +42,10 @@ public class Trigger : MonoBehaviour
             button.SetActive(false);
         }
         else if (collision.gameObject.name == "object")
+        {
+            button.SetActive(false);
+        }
+        else if (collision.gameObject.name == "warning")
         {
             button.SetActive(false);
         }
