@@ -8058,7 +8058,7 @@ Transform:
   m_LocalScale: {x: 105, y: 105, z: 89.0795}
   m_Children: []
   m_Father: {fileID: 313268706}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &140800778
 BoxCollider2D:
@@ -8815,6 +8815,39 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 164425700}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735350190}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 738300156}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1554272607}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -17244,9 +17277,9 @@ RectTransform:
   - {fileID: 862583245}
   - {fileID: 1278374136}
   - {fileID: 2073146154}
-  - {fileID: 1147178221}
   - {fileID: 140800777}
   - {fileID: 2064742931}
+  - {fileID: 1147178221}
   - {fileID: 651488881}
   - {fileID: 961307565}
   - {fileID: 118187496}
@@ -17645,7 +17678,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -78.94031}
+  m_AnchoredPosition: {x: 0, y: -78.94043}
   m_SizeDelta: {x: 250, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &359643826
@@ -33683,7 +33716,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735350190}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.03, y: 37.18, z: 0}
+  m_LocalPosition: {x: -20.75, y: 37.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1505331219}
@@ -50010,7 +50043,7 @@ Transform:
   m_LocalScale: {x: 105, y: 105, z: 89.0795}
   m_Children: []
   m_Father: {fileID: 313268706}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1147178222
 BoxCollider2D:
@@ -59806,12 +59839,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pictures:
+  - {fileID: 1847519514}
+  - {fileID: 1278374136}
   - {fileID: 2073146154}
   - {fileID: 140800777}
   - {fileID: 2064742931}
   - {fileID: 1147178221}
-  - {fileID: 651488881}
-  - {fileID: 1278374136}
   player: {fileID: 735350190}
   game: {fileID: 313268705}
   but: {fileID: 1376457190}
@@ -59943,6 +59976,50 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 164425700}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735350190}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 738300156}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1554272607}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1376457190}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -65026,7 +65103,7 @@ GameObject:
   - component: {fileID: 1554272609}
   - component: {fileID: 1554272608}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Pause_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85478,7 +85555,7 @@ Transform:
   m_LocalScale: {x: 105, y: 105, z: 89.079506}
   m_Children: []
   m_Father: {fileID: 313268706}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2064742932
 BoxCollider2D:
