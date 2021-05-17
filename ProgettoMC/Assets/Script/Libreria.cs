@@ -5,10 +5,12 @@ using UnityEngine;
 public class Libreria : MonoBehaviour
 {
     private Animator animator;
-    public AudioSource audio;
+    public AudioSource source;
+    public AudioClip clip;
     // Start is called before the first frame update
     void Start()
     {
+        
         animator = GetComponent<Animator>();
     }
 
@@ -22,7 +24,7 @@ public class Libreria : MonoBehaviour
     }
     void Active()
     {
-        audio.Play();
+        source.Play();
         animator.SetBool("trovato", true);
     }
 }

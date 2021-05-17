@@ -8,8 +8,7 @@ public class Soluzione : MonoBehaviour
     public Transform[] pictures;
     public GameObject player;
     public GameObject game;
-    public GameObject retun;
-   // public GameObject but;
+    public GameObject pause;
     public GameObject joystick;
     public bool open;
     public GameObject libro1;
@@ -38,9 +37,9 @@ public class Soluzione : MonoBehaviour
             game.SetActive(false);
             player.SetActive(true);
             //camera.enabled = true;
-           // but.SetActive(true);
+           
             joystick.SetActive(true);
-            retun.SetActive(false);
+            pause.SetActive(true);
             if (cont == false)
             {
                 enemy.transform.position = spawn.transform.position;

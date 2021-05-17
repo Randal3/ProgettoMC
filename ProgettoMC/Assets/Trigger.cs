@@ -15,7 +15,7 @@ public class Trigger : MonoBehaviour
             button.SetActive(true);
             n = 1;
         }
-        else if(collision.gameObject.name == "Object")
+        else if(collision.gameObject.name == "Object1")
         {
             button.SetActive(true);
             n = 2;
@@ -27,7 +27,7 @@ public class Trigger : MonoBehaviour
         {
             button.SetActive(false);
         }
-        else if (collision.gameObject.name == "Object")
+        else if (collision.gameObject.name == "Object1")
         {
             button.SetActive(false);
         }

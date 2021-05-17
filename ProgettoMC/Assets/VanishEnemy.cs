@@ -17,7 +17,6 @@ public class VanishEnemy : MonoBehaviour
     void Update()
     {
             time += Time.deltaTime;
-            Debug.Log(time);
         if (time >= 15)
         {
             animator.SetBool("death", true);
