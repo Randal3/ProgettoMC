@@ -20,18 +20,18 @@ public class Soluzione : MonoBehaviour
     void Start()
     {
         youWin = false;
-        cont = false;
+        cont = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if ((pictures[0].rotation.eulerAngles.z == 180 || pictures[0].rotation.eulerAngles.z <= 10) &&
+        if (((pictures[0].rotation.eulerAngles.z == 180 || pictures[0].rotation.eulerAngles.z <= 10) &&
              pictures[1].rotation.eulerAngles.z <= 10 &&
              pictures[2].rotation.eulerAngles.z == 180 && 
             (pictures[3].rotation.eulerAngles.z <= 10 || pictures[3].rotation.eulerAngles.z == 180 ) &&
              pictures[4].rotation.eulerAngles.z == 180 &&
-             pictures[5].rotation.eulerAngles.z == 270)
+             pictures[5].rotation.eulerAngles.z == 270) && cont)
         {
             youWin = true;
             game.SetActive(false);
@@ -40,14 +40,11 @@ public class Soluzione : MonoBehaviour
            
             joystick.SetActive(true);
             pause.SetActive(true);
-            if (cont == false)
-            {
                 enemy.transform.position = spawn.transform.position;
                 enemy.SetActive(true);
                 libro1.SetActive(true);
-                cont= true;
+                cont= false;
                 Luci.luci = true;
-            }
 
         }
     }

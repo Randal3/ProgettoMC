@@ -21,6 +21,7 @@ public class Buttone : MonoBehaviour
 
     private void ButtonClicked()
     {
+        Debug.Log(Trigger.n);
         switch (Trigger.n)
         {
             case 1:
@@ -43,12 +44,13 @@ public class Buttone : MonoBehaviour
                 gameObject.SetActive(false);
                 break;
             case 4:
+                Debug.Log("33");
                 Wire.SetActive(true);
-                gameObject.SetActive(false);
                 joystick.SetActive(false);
                 retur.SetActive(true);
-                player.SetActive(false);
                 Pausa.SetActive(false);
+                player.SetActive(false);
+                gameObject.SetActive(false);
                 break;
         }
     }
