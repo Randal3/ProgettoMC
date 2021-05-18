@@ -10,6 +10,7 @@ public class Engine : MonoBehaviour
     public GameObject joystick;
     public GameObject Pause;
     public GameObject Wire;
+    public static bool wire = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,7 @@ public class Engine : MonoBehaviour
             joystick.SetActive(true);
             player.SetActive(true);
             Wire.SetActive(false);
+            wire = false;
             Wire_Game.Instance.Restart();
             Wire_Game.Instance.Clone();
         }

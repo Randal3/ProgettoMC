@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class soundManager : MonoBehaviour
+public class SoundManager : MonoBehaviour
 {
 
-    public static AudioClip entraSound, esciSound, heavyBreathing;
+    public static AudioClip entraSound, esciSound, heavyBreathing,libreria;
     static AudioSource audioSrc;
 
     // Start is called before the first frame update
@@ -14,6 +14,7 @@ public class soundManager : MonoBehaviour
         entraSound = Resources.Load<AudioClip>("entraSound");
         esciSound = Resources.Load<AudioClip>("esciSound");
         heavyBreathing = Resources.Load<AudioClip>("heavyBreathing");
+        libreria = Resources.Load<AudioClip>("libreria");
 
         audioSrc = GetComponent<AudioSource>();
     }
@@ -34,6 +35,9 @@ public class soundManager : MonoBehaviour
             case "esci":
                 audioSrc.Stop();
                 audioSrc.PlayOneShot(esciSound);
+                break;
+            case "libreria":
+                audioSrc.PlayOneShot(libreria);
                 break;
         }
     }

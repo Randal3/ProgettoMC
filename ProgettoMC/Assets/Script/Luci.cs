@@ -12,7 +12,6 @@ public class Luci : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
- 
     }
 
     // Update is called once per frame
@@ -33,6 +32,7 @@ public class Luci : MonoBehaviour
                 GameObject.FindGameObjectWithTag("Luci").SetActive(true);
                 player.SetActive(false);
                 allarme.SetActive(false);
+                
                 cont = 0;
             }
         }

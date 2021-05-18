@@ -12,7 +12,7 @@ public class Soluzione : MonoBehaviour
     public GameObject joystick;
     public bool open;
     public GameObject libro1;
-    private bool cont;
+    public static bool cont;
     public GameObject enemy;
     public Transform spawn;
 
