@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class FineGioco : MonoBehaviour
 {
     public Gestore_Indovinelli gestoreIndovinelli;
     public GameObject fuga;
     public GameObject haiFinito;
+    public Text timer;
+    public static string tempoFinale;
     
 
     // Start is called before the first frame update
@@ -31,8 +34,6 @@ public class FineGioco : MonoBehaviour
             this.fuga.SetActive(true);
             this.haiFinito.SetActive(true);
         }
-        else
-            Debug.Log("non hai ancora finito");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -40,6 +41,7 @@ public class FineGioco : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             SceneManager.LoadScene("FineGioco");
+            tempoFinale = timer.text;
         }
     }
 }

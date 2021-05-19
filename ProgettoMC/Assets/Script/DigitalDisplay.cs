@@ -15,6 +15,10 @@ public class DigitalDisplay : MonoBehaviour
     public GameObject enemy;
     public Transform spawn;
 
+    private GameObject gestoreIndovinelli;
+    public int numeroIndovinello;
+    public FineGioco finegioco;
+
     void Start()
     {
         codeSequences = "";
@@ -23,6 +27,8 @@ public class DigitalDisplay : MonoBehaviour
             characters[i].sprite = digits[5];
         }*/
         PushTheButton.ButtonPressed += AddDigitToCodeSequences;
+
+        gestoreIndovinelli = GameObject.Find("RiddlesControl");
     }
     private void AddDigitToCodeSequences(string digitEntered)
     {
@@ -151,6 +157,10 @@ public class DigitalDisplay : MonoBehaviour
         game.SetActive(false);
         enemy.transform.position = spawn.transform.position;
         enemy.SetActive(true);
+
+        gestoreIndovinelli.GetComponent<Gestore_Indovinelli>().setIndovinelli(numeroIndovinello);
+        finegioco.GetComponent<FineGioco>().FinisciGioco();
+
     }
     private void ResetDisplay()
     {

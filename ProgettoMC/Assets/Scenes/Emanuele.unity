@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1495,6 +1495,8 @@ MonoBehaviour:
   bottone: {fileID: 2106053582}
   enemy: {fileID: 639699032}
   spawn: {fileID: 654410991}
+  numeroIndovinello: 2
+  finegioco: {fileID: 432000749}
 --- !u!1 &69949371
 GameObject:
   m_ObjectHideFlags: 0
@@ -8736,7 +8738,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &164425701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8756,7 +8758,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164425700}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -8832,7 +8834,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164425700}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -19025,7 +19027,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gestoreIndovinelli: {fileID: 1863901394}
+  fuga: {fileID: 432000746}
   haiFinito: {fileID: 1325933851}
+  timer: {fileID: 359643826}
 --- !u!1 &433209613
 GameObject:
   m_ObjectHideFlags: 0
@@ -33756,7 +33760,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735350190}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.03, y: 37.18, z: 0}
+  m_LocalPosition: {x: -20.52, y: 35.69, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1505331219}
@@ -45563,7 +45567,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.45647871}
+  m_Offset: {x: 0, y: -1.554349}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -45574,7 +45578,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3125, y: 1.7879574}
+  m_Size: {x: 1.3125, y: 0.7504072}
   m_EdgeRadius: 0
 --- !u!1001 &1034953036
 PrefabInstance:
@@ -59972,6 +59976,8 @@ MonoBehaviour:
   libro1: {fileID: 1559677786}
   enemy: {fileID: 639699032}
   spawn: {fileID: 35989483}
+  numeroIndovinello: 1
+  finegioco: {fileID: 432000749}
 --- !u!114 &1373252983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68214,12 +68220,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   codeText: {fileID: 1458732050}
-  key: {fileID: 0}
   daDovePrendoSoluzione: {fileID: 1925628579}
   numeroIndovinello: 0
   enemy: {fileID: 639699032}
   spawn: {fileID: 812538008}
-  finegioco: {fileID: 0}
+  finegioco: {fileID: 432000749}
 --- !u!114 &1648149941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74096,6 +74101,8 @@ MonoBehaviour:
   game: {fileID: 472061137}
   enemy: {fileID: 639699032}
   spawn: {fileID: 182943012}
+  numeroIndovinello: 3
+  finegioco: {fileID: 432000749}
 --- !u!114 &1874884521
 MonoBehaviour:
   m_ObjectHideFlags: 0

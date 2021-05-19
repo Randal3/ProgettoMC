@@ -20,7 +20,7 @@ public class Luci : MonoBehaviour
     {
         if (luci == true)
         {
-            GameObject.FindGameObjectWithTag("Luci").SetActive(false);
+            //GameObject.FindGameObjectWithTag("Luci").SetActive(false);
             player.SetActive(true);
             allarme.SetActive(true);
             cont = 1;

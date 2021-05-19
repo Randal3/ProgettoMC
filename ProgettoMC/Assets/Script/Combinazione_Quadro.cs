@@ -38,8 +38,8 @@ public class Combinazione_Quadro : MonoBehaviour
             enemy.transform.position = spawn.transform.position;
             enemy.SetActive(true);
             //key.gameObject.SetActive(true);
-            gestoreIndovinelli.GetComponent<Gestore_Indovinelli>().setIndovinelli(numeroIndovinello);
             Luci.luci = true;
+            gestoreIndovinelli.GetComponent<Gestore_Indovinelli>().setIndovinelli(numeroIndovinello);
             finegioco.GetComponent<FineGioco>().FinisciGioco();
         }
 

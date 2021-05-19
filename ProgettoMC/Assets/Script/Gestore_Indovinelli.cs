@@ -32,9 +32,10 @@ public class Gestore_Indovinelli : MonoBehaviour
 
     public bool isFinito()
     {
-        for (int i = 0; i < 1; i++)
-            if (this.indovinelli[i] == true)
-                return true;
-        return false;
+        bool finito = true;
+        for (int i = 0; i < 4 && finito; i++)
+            if (this.indovinelli[i] != true)
+                 finito = false;
+        return finito;
     }
 }
