@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3258,7 +3258,9 @@ MonoBehaviour:
     under Creative Commons: Attribution 3.0 Unported (CC BY 3.0)\r\nhttps://creativecommons.org/licenses/by/3.0/\r\nMusic
     promoted by https://www.chosic.com/\r\n\r\nCome Play with Me Kevin MacLeod (incompetech.com)\r\nLicensed
     under Creative Commons: By Attribution 3.0 License\r\nhttp://creativecommons.org/licenses/by/3.0/\r\nMusic
-    promoted by https://www.chosic.com/ \r\n\r\nModern Interiors tileset(limezu.itch.io)"
+    promoted by https://www.chosic.com/ \r\n\r\nModern Interiors tileset(limezu.itch.io)\n\nCinematic
+    Stinger [Horror Heartbeat] [Suspense] (Sound Effects) by Movie Man\nYoutube:
+    https://www.youtube.com/channel/UCKTRL7aakgfEBput7oJ-byg"
 --- !u!222 &2107285995
 CanvasRenderer:
   m_ObjectHideFlags: 0
