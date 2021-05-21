@@ -20,11 +20,10 @@ public class Luci : MonoBehaviour
     {
         if (luci == true)
         {
-            GameObject.FindGameObjectWithTag("Luci").SetActive(false);
-            player.SetActive(true);
-            allarme.SetActive(true);
-            alarm.Play();
-            cont = 1;
+            if(cont == 0)
+            {
+                spegniLuci();
+            }
         }
         else
         {
@@ -39,26 +38,18 @@ public class Luci : MonoBehaviour
             }
         }
     }
-
-        /*
-            public static void spegniLuci()
+            public void spegniLuci()
             {
                 Debug.Log("Sono qui");
-                while(cont < 20) {
-                    GameObject.FindGameObjectWithTag("Luci").SetActive(false); 
-                    cont++;
-                }
+                for(int i = 0; i < 10; i++)
+                {
+                GameObject.FindGameObjectWithTag("Luci").SetActive(false);
+                player.SetActive(true);
+                allarme.SetActive(true);
+                alarm.Play();
+                cont = 1;
+                 }
+
             }
 
-            public static void accendiLuci()
-            {
-                cont = 0;
-                Debug.Log("Sono Accese");
-                while (cont < 20)
-                {
-                    Debug.Log("S121423124");
-                    GameObject.FindGameObjectWithTag("Luci").SetActive(true);
-                    cont++;
-                }
-            }*/
     }

@@ -33,11 +33,11 @@ public class Combinazione_Quadro : MonoBehaviour
 
         if (codeTextValue == soluzione)
         {
+            Luci.luci = true;
             enemy.transform.position = spawn.transform.position;
             enemy.SetActive(true);
             key.gameObject.SetActive(true);
             gestoreIndovinelli.GetComponent<Gestore_Indovinelli>().setIndovinelli(numeroIndovinello);
-            Luci.luci = true;
         }
 
         if (codeTextValue.Length >= 4)
