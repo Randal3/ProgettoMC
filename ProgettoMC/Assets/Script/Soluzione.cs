@@ -45,7 +45,7 @@ public class Soluzione : MonoBehaviour
             Debug.Log("Soluzione");
             cont = false;
             Luci.luci = true;
-            Alarm_script.pippo.AlarmPlay();
+            
 
         }
     }
