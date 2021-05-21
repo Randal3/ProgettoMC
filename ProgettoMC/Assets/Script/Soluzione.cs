@@ -12,7 +12,7 @@ public class Soluzione : MonoBehaviour
     public GameObject joystick;
     public bool open;
     public GameObject libro1;
-    public static bool cont;
+    public static bool cont = true;
     public GameObject enemy;
     public Transform spawn;
 
@@ -20,7 +20,6 @@ public class Soluzione : MonoBehaviour
     void Start()
     {
         youWin = false;
-        cont = true;
     }
 
     // Update is called once per frame
@@ -40,11 +39,13 @@ public class Soluzione : MonoBehaviour
            
             joystick.SetActive(true);
             pause.SetActive(true);
-                enemy.transform.position = spawn.transform.position;
+            enemy.transform.position = spawn.transform.position;
                 enemy.SetActive(true);
                 libro1.SetActive(true);
-                cont= false;
-                Luci.luci = true;
+            Debug.Log("Soluzione");
+            cont = false;
+            Luci.luci = true;
+            Alarm_script.pippo.AlarmPlay();
 
         }
     }

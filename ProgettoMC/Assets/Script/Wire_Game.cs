@@ -11,6 +11,7 @@ public class Wire_Game : MonoBehaviour
     private  GameObject rightc;
     private  GameObject leftc;
     public  GameObject cointer;
+    public AudioSource alarm;
 
     public bool but = false;
 
@@ -33,14 +34,15 @@ public class Wire_Game : MonoBehaviour
     {
         if (onCount == switchCount)
             but = !but;
-        Debug.Log(but);
     }
      void Update()
     {
         if (onCount == switchCount && but == true)
         {
             win = true;
+            
             Debug.Log("U WIN");
+            alarm.Stop();
            // Luci.luci = false;
             but = false;
             onCount = 0;
