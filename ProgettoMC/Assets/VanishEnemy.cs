@@ -7,6 +7,7 @@ public class VanishEnemy : MonoBehaviour
     public float time;
     public GameObject enemy;
     private Animator animator;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +17,8 @@ public class VanishEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            time += Time.deltaTime;
+
+        time += Time.deltaTime;
         if (time >= 15)
         {
             animator.SetBool("death", true);
