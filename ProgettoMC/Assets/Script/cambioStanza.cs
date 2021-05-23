@@ -32,7 +32,6 @@ public class cambioStanza : MonoBehaviour
             if (Luci.luci == false)
             {
                 Luce.SetActive(true);
-                Debug.Log("Luceeee");
             }
                 
         }
