@@ -7,6 +7,9 @@ public class Timer : MonoBehaviour
 {
     public Text TimerText;
     private float startTime;
+
+    public FineGioco fine;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +23,15 @@ public class Timer : MonoBehaviour
         string minutes = ((int)t / 60).ToString();
         string seconds = (t % 60).ToString("f2");
         TimerText.text = minutes + ":" + seconds;
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("enemy"))
+        {
+            string tempo = TimerText.ToString();
+            Debug.Log("sei morto");
+            fine.Setup(tempo);
+        }
     }
 }

@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class FineGioco : MonoBehaviour
 {
+
     public Text tempo;
-    public static  void Setup()
+    public void Setup(string time)
     {
-       // gameObject.SetActive(true);
+        gameObject.SetActive(true);
+        tempo.text = time.ToString();
     }
 
 }

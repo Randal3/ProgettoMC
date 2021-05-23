@@ -44,13 +44,13 @@ public class PlayerMovement : MonoBehaviour
         myRigidbody.MovePosition(transform.position + change * speed);
          
     }
-
+    /*
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("enemy"))
         {
             Debug.Log("sei morto");
-            //FineGioco.Setup();
+            fine.Setup();
         }
-    }
+    }*/
 }
