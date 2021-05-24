@@ -7,7 +7,9 @@ public class VanishEnemy : MonoBehaviour
     public float time;
     public GameObject enemy;
     private Animator animator;
-    
+
+    public FineGioco fine;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,5 +32,15 @@ public class VanishEnemy : MonoBehaviour
         time = 0;
         enemy.SetActive(false);
         animator.SetBool("death", false);
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            string minutes = Timer.minutes;
+            string seconds = Timer.seconds;
+            fine.Setup(minutes, seconds);
+        }
     }
 }

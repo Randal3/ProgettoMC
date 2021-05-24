@@ -148,6 +148,7 @@ public class DigitalDisplay : MonoBehaviour
     }
     private void Correct()
     {
+        Luci.luci = true;
         game.SetActive(false);
         enemy.transform.position = spawn.transform.position;
         enemy.SetActive(true);
