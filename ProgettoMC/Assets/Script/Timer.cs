@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour
     public static string minutes;
     public static string seconds;
 
-    public FineGioco fine;
+    public MortePlayer fine;
     public static bool Freeze = true;
     // Start is called before the first frame update
     void Start()

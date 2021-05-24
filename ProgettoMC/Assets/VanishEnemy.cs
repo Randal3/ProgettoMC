@@ -8,7 +8,7 @@ public class VanishEnemy : MonoBehaviour
     public GameObject enemy;
     private Animator animator;
 
-    public FineGioco fine;
+    public MortePlayer fine;
 
     // Start is called before the first frame update
     void Start()

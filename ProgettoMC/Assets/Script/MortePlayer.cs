@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class FineGioco : MonoBehaviour
+public class MortePlayer : MonoBehaviour
 {
 
     public Text tempo;
@@ -14,13 +14,10 @@ public class FineGioco : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
-    public void Setup(string minuti,string secondi)
+    public void Setup(string minuti, string secondi)
     {
         gameObject.SetActive(true);
         tempo.text = minuti + ":" + secondi;
         Time.timeScale = 0;
     }
-
-
-
 }

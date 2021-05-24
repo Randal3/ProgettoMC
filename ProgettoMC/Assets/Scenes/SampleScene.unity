@@ -17133,7 +17133,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 304499687}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2008401861ba77499c043c1299975eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 132e866c4a649da4c96c05e6cb8fd364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tempo: {fileID: 486482139}
@@ -34112,7 +34112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerText: {fileID: 359643826}
-  fine: {fileID: 304499689}
+  fine: {fileID: 0}
 --- !u!95 &735350192
 Animator:
   serializedVersion: 3
