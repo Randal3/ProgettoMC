@@ -9,8 +9,8 @@ public class Gestore_Indovinelli : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        indovinelli = new bool[8];
-        for (int i = 0; i <= 7; i++)
+        indovinelli = new bool[4];
+        for (int i = 0; i <= 3; i++)
             indovinelli[i] = false;
     }
 
@@ -27,6 +27,15 @@ public class Gestore_Indovinelli : MonoBehaviour
 
     public void setIndovinelli(int numeroIndovinello)
     {
-         this.indovinelli[numeroIndovinello] = true;
+         indovinelli[numeroIndovinello] = true;
+    }
+
+    public bool isFinito()
+    {
+        bool finito = true;
+        for (int i = 0; i < 4 && finito; i++)
+            if (this.indovinelli[i] != true)
+                 finito = false;
+        return finito;
     }
 }

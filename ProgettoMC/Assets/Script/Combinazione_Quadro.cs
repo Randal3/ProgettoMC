@@ -9,7 +9,7 @@ public class Combinazione_Quadro : MonoBehaviour
     Text codeText;
     string codeTextValue = "";
 
-    public GameObject key;
+    //public GameObject key;
 
     public Quadro_Randomico daDovePrendoSoluzione;
     private string soluzione;
@@ -20,10 +20,12 @@ public class Combinazione_Quadro : MonoBehaviour
     public GameObject enemy;
     public Transform spawn;
 
+    public FineGioco finegioco;
+
     void Start()
     {
         gestoreIndovinelli = GameObject.Find("RiddlesControl");
-        soluzione = daDovePrendoSoluzione.GetComponent<Quadro_Randomico>().getSoluzione();   
+        soluzione = daDovePrendoSoluzione.GetComponent<Quadro_Randomico>().getSoluzione(); 
     }
 
     // Update is called once per frame
@@ -36,8 +38,10 @@ public class Combinazione_Quadro : MonoBehaviour
             Luci.luci = true;
             enemy.transform.position = spawn.transform.position;
             enemy.SetActive(true);
-            key.gameObject.SetActive(true);
+
             gestoreIndovinelli.GetComponent<Gestore_Indovinelli>().setIndovinelli(numeroIndovinello);
+            finegioco.GetComponent<FineGioco>().FinisciGioco();
+
         }
 
         if (codeTextValue.Length >= 4)

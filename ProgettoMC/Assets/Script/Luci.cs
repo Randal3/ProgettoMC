@@ -20,6 +20,7 @@ public class Luci : MonoBehaviour
     {
         if (luci == true)
         {
+
             if(cont == 0)
             {
                 spegniLuci();

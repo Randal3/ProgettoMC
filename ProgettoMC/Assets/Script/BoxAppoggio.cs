@@ -22,8 +22,13 @@ public class BoxAppoggio : MonoBehaviour
     public GameObject enemy;
     public Transform spawn;
 
+    private GameObject gestoreIndovinelli;
+    public int numeroIndovinello;
+    public FineGioco finegioco;
+
     private void Start()
     {
+        gestoreIndovinelli = GameObject.Find("RiddlesControl");
         int count = Random.Range(1, 8);
         switch (count)
         {
@@ -67,6 +72,9 @@ public class BoxAppoggio : MonoBehaviour
                 enemy.transform.position = spawn.transform.position;
                 enemy.SetActive(true);
                 indovinelloFinito = true;
+
+                gestoreIndovinelli.GetComponent<Gestore_Indovinelli>().setIndovinelli(numeroIndovinello);
+                finegioco.GetComponent<FineGioco>().FinisciGioco();
 
                 Luci.luci = true;
                 cont++;

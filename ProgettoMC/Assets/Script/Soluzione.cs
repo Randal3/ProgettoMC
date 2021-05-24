@@ -16,10 +16,16 @@ public class Soluzione : MonoBehaviour
     public GameObject enemy;
     public Transform spawn;
 
+    private GameObject gestoreIndovinelli;
+    public int numeroIndovinello;
+    public FineGioco finegioco;
+
     // Start is called before the first frame update
     void Start()
     {
-        youWin = false;
+        youWin = false
+        cont = false;
+        gestoreIndovinelli = GameObject.Find("RiddlesControl");
     }
 
     // Update is called once per frame
@@ -40,6 +46,16 @@ public class Soluzione : MonoBehaviour
             joystick.SetActive(true);
             pause.SetActive(true);
             enemy.transform.position = spawn.transform.position;
+
+            //but.SetActive(false);
+
+            gestoreIndovinelli.GetComponent<Gestore_Indovinelli>().setIndovinelli(numeroIndovinello);
+            finegioco.GetComponent<FineGioco>().FinisciGioco();
+
+            if (cont == false)
+            {
+                enemy.transform.position = spawn.transform.position;
+
                 enemy.SetActive(true);
                 libro1.SetActive(true);
             Debug.Log("Soluzione");
