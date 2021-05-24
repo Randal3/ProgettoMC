@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
-    public static bool Freeze = true;
+    
     // Start is called before the first frame update
     public void Quit()
     {
@@ -13,14 +13,19 @@ public class Pause : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Awake()
+
+    private void Update()
     {
-        Freeze = false;
-        Time.timeScale = 0;
+        Debug.Log("Active");
+        if (gameObject.activeSelf == true)
+        {
+            Timer.Freeze = false;
+            Time.timeScale = 0;
+        }
     }
     public void Resume()
     {
-        Freeze = true;
+        Timer.Freeze = true;
         Time.timeScale = 1;
     }
 }

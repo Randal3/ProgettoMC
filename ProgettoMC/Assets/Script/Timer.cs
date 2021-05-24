@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
     private float startTime;
 
     public FineGioco fine;
-
+    public static bool Freeze = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,8 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        while (Pause.Freeze == true)
+        Debug.Log(Timer.Freeze);
+        if (Timer.Freeze == true)
         {
             float t = Time.time - startTime;
             string minutes = ((int)t / 60).ToString();
