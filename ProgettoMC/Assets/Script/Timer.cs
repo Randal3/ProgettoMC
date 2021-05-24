@@ -19,10 +19,13 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float t = Time.time - startTime;
-        string minutes = ((int)t / 60).ToString();
-        string seconds = (t % 60).ToString("f2");
-        TimerText.text = minutes + ":" + seconds;
+        while (Pause.Freeze == true)
+        {
+            float t = Time.time - startTime;
+            string minutes = ((int)t / 60).ToString();
+            string seconds = (t % 60).ToString("f2");
+            TimerText.text = minutes + ":" + seconds;
+        }
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
