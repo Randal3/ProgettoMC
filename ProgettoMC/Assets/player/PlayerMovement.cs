@@ -10,7 +10,6 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private Joystick joystick;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -45,4 +44,13 @@ public class PlayerMovement : MonoBehaviour
         myRigidbody.MovePosition(transform.position + change * speed);
          
     }
+    /*
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("enemy"))
+        {
+            Debug.Log("sei morto");
+            fine.Setup();
+        }
+    }*/
 }
