@@ -23,7 +23,7 @@ public class Soluzione : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        youWin = false
+        youWin = false;
         cont = false;
         gestoreIndovinelli = GameObject.Find("RiddlesControl");
     }
@@ -58,10 +58,10 @@ public class Soluzione : MonoBehaviour
 
                 enemy.SetActive(true);
                 libro1.SetActive(true);
-            Debug.Log("Soluzione");
-            cont = false;
-            Luci.luci = true;
-            
+                Debug.Log("Soluzione");
+                cont = false;
+                Luci.luci = true;
+            }
 
         }
     }
