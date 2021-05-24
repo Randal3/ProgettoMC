@@ -1497,6 +1497,8 @@ MonoBehaviour:
   bottone: {fileID: 2106053582}
   enemy: {fileID: 639699032}
   spawn: {fileID: 654410991}
+  numeroIndovinello: 3
+  finegioco: {fileID: 270134343}
 --- !u!1 &69949371
 GameObject:
   m_ObjectHideFlags: 0
@@ -12665,6 +12667,7 @@ RectTransform:
   - {fileID: 976042390}
   - {fileID: 2106053583}
   - {fileID: 359643825}
+  - {fileID: 1090285635}
   - {fileID: 304499688}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -13364,8 +13367,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 266966230}
-  - component: {fileID: 266966229}
   - component: {fileID: 266966228}
+  - component: {fileID: 266966229}
   m_Layer: 0
   m_Name: Nascondiglio
   m_TagString: Untagged
@@ -13490,11 +13493,85 @@ Transform:
   m_GameObject: {fileID: 266966227}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -60.83, y: -2.99, z: -468.6319}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: -1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &270134340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 270134341}
+  - component: {fileID: 270134343}
+  - component: {fileID: 270134342}
+  m_Layer: 0
+  m_Name: CancelloFineGioco
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &270134341
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270134340}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.30999994, y: -11.48, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1298563380}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &270134342
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270134340}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.64583826, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.2916765, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &270134343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270134340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6d851f317467a418f023466ad06900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gestoreIndovinelli: {fileID: 1863901394}
+  fuga: {fileID: 270134340}
+  haiFinito: {fileID: 1090285634}
+  timer: {fileID: 359643826}
 --- !u!1 &273381112
 GameObject:
   m_ObjectHideFlags: 0
@@ -17117,7 +17194,7 @@ RectTransform:
   - {fileID: 202089449}
   - {fileID: 1021241239}
   m_Father: {fileID: 214706549}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -46955,6 +47032,84 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!1 &1090285634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1090285635}
+  - component: {fileID: 1090285637}
+  - component: {fileID: 1090285636}
+  m_Layer: 5
+  m_Name: HaiFinito
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1090285635
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090285634}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.5788022, y: 1.5788022, z: 1.5788022}
+  m_Children: []
+  m_Father: {fileID: 214706549}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -4.999878, y: -245.99988}
+  m_SizeDelta: {x: 250, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1090285636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090285634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 634a7754734d0a54cb5e3e2d3e72154b, type: 3}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 4
+    m_MaxSize: 75
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Hai Finito
+--- !u!222 &1090285637
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090285634}
+  m_CullTransparentMesh: 0
 --- !u!1 &1096838490
 GameObject:
   m_ObjectHideFlags: 0
@@ -59937,6 +60092,7 @@ Transform:
   - {fileID: 686468442}
   - {fileID: 1270294100}
   - {fileID: 907433906}
+  - {fileID: 270134341}
   m_Father: {fileID: 33922276}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -60611,6 +60767,8 @@ MonoBehaviour:
   libro1: {fileID: 1559677786}
   enemy: {fileID: 639699032}
   spawn: {fileID: 35989483}
+  numeroIndovinello: 2
+  finegioco: {fileID: 270134343}
 --- !u!114 &1373252983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69118,11 +69276,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   codeText: {fileID: 1458732050}
-  key: {fileID: 0}
   daDovePrendoSoluzione: {fileID: 1925628579}
-  numeroIndovinello: 2
+  numeroIndovinello: 0
   enemy: {fileID: 639699032}
   spawn: {fileID: 812538008}
+  finegioco: {fileID: 270134343}
 --- !u!114 &1648149941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75153,6 +75311,8 @@ MonoBehaviour:
   game: {fileID: 472061137}
   enemy: {fileID: 639699032}
   spawn: {fileID: 182943012}
+  numeroIndovinello: 1
+  finegioco: {fileID: 270134343}
 --- !u!114 &1874884521
 MonoBehaviour:
   m_ObjectHideFlags: 0
