@@ -9,7 +9,7 @@ public class MortePlayer : MonoBehaviour
 
     public Text tempo;
 
-    public void menu()
+    public void Menu()
     {
         SceneManager.LoadScene("Menu");
     }

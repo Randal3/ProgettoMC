@@ -22,7 +22,6 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Timer.Freeze);
         if (Timer.Freeze == true)
         {
             float t = Time.time - startTime;

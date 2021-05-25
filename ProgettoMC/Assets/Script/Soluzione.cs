@@ -15,6 +15,7 @@ public class Soluzione : MonoBehaviour
     public static bool cont = true;
     public GameObject enemy;
     public Transform spawn;
+    public GameObject ret;
 
     private GameObject gestoreIndovinelli;
     public int numeroIndovinello;
@@ -44,7 +45,7 @@ public class Soluzione : MonoBehaviour
             joystick.SetActive(true);
             pause.SetActive(true);
             enemy.transform.position = spawn.transform.position;
-
+            ret.SetActive(false);
             gestoreIndovinelli.GetComponent<Gestore_Indovinelli>().setIndovinelli(numeroIndovinello);
             finegioco.GetComponent<FineGioco>().FinisciGioco();
 
