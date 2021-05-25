@@ -10,6 +10,7 @@ public class Engine : MonoBehaviour
     public GameObject joystick;
     public GameObject Pause;
     public GameObject Wire;
+    public AudioSource alarm;
     public static bool wire = true;
     // Start is called before the first frame update
     void Start()
@@ -22,8 +23,8 @@ public class Engine : MonoBehaviour
     {
         if (Wire_Game.Instance.but)
         {
+            alarm.Stop();
             Luci.luci = false;
-            Debug.Log("ciao");
             Pause.SetActive(true);
             joystick.SetActive(true);
             player.SetActive(true);

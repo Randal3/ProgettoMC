@@ -31813,7 +31813,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -43952,7 +43952,6 @@ MonoBehaviour:
   left: {fileID: 1460824547}
   right: {fileID: 343514903}
   cointer: {fileID: 1377647799}
-  alarm: {fileID: 958981560}
   but: 0
   win: 0
   switchCount: 4
@@ -44090,7 +44089,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -46855,6 +46854,7 @@ MonoBehaviour:
   joystick: {fileID: 738300156}
   Pause: {fileID: 1554272607}
   Wire: {fileID: 1377647799}
+  alarm: {fileID: 958981560}
 --- !u!1 &1060383894
 GameObject:
   m_ObjectHideFlags: 0
@@ -88246,7 +88246,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16

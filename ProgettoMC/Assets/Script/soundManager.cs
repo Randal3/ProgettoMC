@@ -37,6 +37,7 @@ public class SoundManager : MonoBehaviour
                 audioSrc.PlayOneShot(esciSound);
                 break;
             case "libreria":
+                Debug.Log("Audio");
                 audioSrc.PlayOneShot(libreria);
                 break;
         }

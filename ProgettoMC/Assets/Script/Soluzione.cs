@@ -24,7 +24,7 @@ public class Soluzione : MonoBehaviour
     void Start()
     {
         youWin = false;
-        cont = false;
+        cont = true;
         gestoreIndovinelli = GameObject.Find("RiddlesControl");
     }
 
@@ -41,27 +41,21 @@ public class Soluzione : MonoBehaviour
             youWin = true;
             game.SetActive(false);
             player.SetActive(true);
-            //camera.enabled = true;
-           
             joystick.SetActive(true);
             pause.SetActive(true);
             enemy.transform.position = spawn.transform.position;
 
-            //but.SetActive(false);
-
             gestoreIndovinelli.GetComponent<Gestore_Indovinelli>().setIndovinelli(numeroIndovinello);
             finegioco.GetComponent<FineGioco>().FinisciGioco();
 
-            if (cont == false)
-            {
                 enemy.transform.position = spawn.transform.position;
 
                 enemy.SetActive(true);
                 libro1.SetActive(true);
                 Debug.Log("Soluzione");
-                cont = false;
                 Luci.luci = true;
-            }
+                cont = false;
+
 
         }
     }

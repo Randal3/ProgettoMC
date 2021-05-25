@@ -7,7 +7,6 @@ public class Rotation : MonoBehaviour
 
     private void OnMouseDown()
     {
-            Debug.Log("2");
             transform.Rotate(0, 0, 90);
     }
 }
