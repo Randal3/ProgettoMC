@@ -15,7 +15,7 @@ public class LevelLoader : MonoBehaviour
         
         if (SceneManager.GetActiveScene().name == "SampleScene" && second)
         {
-            Debug.Log(SceneManager.GetActiveScene().name);
+            
             splash.SetTrigger("transition");
             second = false;
     }
@@ -33,7 +33,7 @@ public class LevelLoader : MonoBehaviour
         
         yield return new WaitForSeconds(transitionTime);
         second = true;
-        Debug.Log("second");
+        
         SceneManager.LoadScene(levelIndex);
 
 

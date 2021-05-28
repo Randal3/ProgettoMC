@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Quadro : MonoBehaviour
 {
     public GameObject game;
-    public Camera camera;
+    public Camera camera1;
     public bool playerInrange;
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class Quadro : MonoBehaviour
         if(Input.GetKey(KeyCode.B) && playerInrange)
         {   
             game.SetActive(true);
-            camera.enabled = false;
+            camera1.enabled = false;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

@@ -30,7 +30,7 @@ public class Tap_anywhere : MonoBehaviour
 
         if (Input.touchCount > 0 || Input.GetKeyDown(KeyCode.A))
         {
-            Debug.Log("Bella");
+            
             splash.SetTrigger("splash");
             Invoke("Aiuto", 1);
         }    }

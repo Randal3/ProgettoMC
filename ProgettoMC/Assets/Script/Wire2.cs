@@ -8,7 +8,7 @@ public class Wire2 : MonoBehaviour
 {
     private LineRenderer line;
     public bool leftWire;
-    private Canvas canvas;
+    private readonly Canvas canvas;
     private bool isDrag = false;
     // Start is called before the first frame update
     void Start()
