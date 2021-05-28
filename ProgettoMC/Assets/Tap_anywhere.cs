@@ -31,14 +31,14 @@ public class Tap_anywhere : MonoBehaviour
         if (Input.touchCount > 0 || Input.GetKeyDown(KeyCode.A))
         {
             Debug.Log("Bella");
-            splash.SetBool("splash", true);
-            Invoke("Aiuto", 2);
+            splash.SetTrigger("splash");
+            Invoke("Aiuto", 1);
         }    }
     void Aiuto()
     {
         
         Tap.SetActive(false);
         Menu.SetActive(true);
-        splash.SetBool("splash", false);
+        
     }
 }

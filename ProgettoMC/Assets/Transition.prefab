@@ -144,4 +144,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   splash: {fileID: 663587530738550116}
-  transitionTime: 1
+  transitionTime: 3
