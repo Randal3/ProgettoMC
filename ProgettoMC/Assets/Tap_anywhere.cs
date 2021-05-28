@@ -10,6 +10,7 @@ public class Tap_anywhere : MonoBehaviour
     public GameObject Menu;
     public GameObject Tap;
     public Text text;
+    public Animator splash;
     float timer;
     
    
@@ -27,10 +28,17 @@ public class Tap_anywhere : MonoBehaviour
             timer = 0;
         }
 
-        if (Input.touchCount > 0)
+        if (Input.touchCount > 0 || Input.GetKeyDown(KeyCode.A))
         {
-            Menu.SetActive(true);
-            Tap.SetActive(false);
-        }
+            Debug.Log("Bella");
+            splash.SetBool("splash", true);
+            Invoke("Aiuto", 2);
+        }    }
+    void Aiuto()
+    {
+        
+        Tap.SetActive(false);
+        Menu.SetActive(true);
+        splash.SetBool("splash", false);
     }
 }
