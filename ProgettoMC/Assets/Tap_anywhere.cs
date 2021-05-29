@@ -12,8 +12,7 @@ public class Tap_anywhere : MonoBehaviour
     public Text text;
     public Animator splash;
     float timer;
-    
-   
+
     // Update is called once per frame
     void Update()
     {

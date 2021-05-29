@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: dc09d98b48ac55d4a90cdd09fd856061
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: DEADLY KILLERS DEMO
+  fontNames:
+  - DEADLY KILLERS DEMO
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 96835d84b1ea16241ae82e781ba3f525, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

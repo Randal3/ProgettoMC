@@ -24,7 +24,7 @@ public class Layer : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            player.sortingOrder = 2;
+            player.sortingOrder = 3;
         }
     }
 }
