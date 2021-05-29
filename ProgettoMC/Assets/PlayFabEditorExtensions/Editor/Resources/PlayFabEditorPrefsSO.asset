@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d0199c11aa6f514784c5c69cd8378d8, type: 3}
+  m_Name: PlayFabEditorPrefsSO
+  m_EditorClassIdentifier: 
+  DevAccountEmail: enigma.games@outlook.it
+  DevAccountToken: ritrns6wz9sjaqqwbwcw1coro15z4i91kxk9q9efyziai8uhuyjx53go6797suy8tuzwuwj8qcyxg4i6xsuxmotjaciy9ehu8wnd5gexyg54gww9xgker8xzm8tfg1d4dgg9bq1oa75s3hin18ja6eeyacjpud6gno7umhwb9xtc1zzu5q3dymyknep8wwf8neqgiqy7
+  SelectedStudio: En?gma Games
+  SdkPath: Assets/PlayFabSDK
+  EdExPath: 
+  LocalCloudScriptPath: 
+  PanelIsShown: 0
+  curMainMenuIdx: 1
+  curSubMenuIdx: 0
