@@ -13,9 +13,10 @@ public class Tap_anywhere : MonoBehaviour
     public Animator splash;
     float timer;
 
-    // Update is called once per frame
     void Update()
     {
+        Debug.Log("WHY");
+        Debug.Log(timer +=  Time.deltaTime);
         timer +=  Time.deltaTime;
         if (timer >= 0.3)
         {
@@ -29,7 +30,7 @@ public class Tap_anywhere : MonoBehaviour
 
         if (Input.touchCount > 0 || Input.GetKeyDown(KeyCode.A))
         {
-            
+            timer = 0;
             splash.SetTrigger("splash");
             Invoke("Aiuto", 1);
         }    }

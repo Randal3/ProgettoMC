@@ -12,6 +12,7 @@ public class MortePlayer : MonoBehaviour
     public void Menu()
     {
         SceneManager.LoadScene("Menu");
+        Time.timeScale = 1;
     }
 
     public void Setup(string minuti, string secondi)
