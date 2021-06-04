@@ -15,7 +15,6 @@ public class PushTheButton : MonoBehaviour
         gameObject.GetComponent<Button>().onClick.AddListener(ButtonClicked);
     }
     private void ButtonClicked() {
-        Debug.Log("33");
         ButtonPressed(buttonName);
     }
 }

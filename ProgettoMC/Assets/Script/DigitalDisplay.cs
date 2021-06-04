@@ -14,7 +14,7 @@ public class DigitalDisplay : MonoBehaviour
 
     public GameObject enemy;
     public Transform spawn;
-
+    
     private GameObject gestoreIndovinelli;
     public int numeroIndovinello;
     public FineGioco finegioco;
@@ -148,7 +148,7 @@ public class DigitalDisplay : MonoBehaviour
         }
         else
         {
-
+            
             ResetDisplay();
         }
     }
