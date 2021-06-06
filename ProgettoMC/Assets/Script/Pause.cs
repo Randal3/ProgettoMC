@@ -11,7 +11,7 @@ public class Pause : MonoBehaviour
     public void Quit()
     {
         Timer.Freeze = false;
-        Time.timeScale = 0;
+        Time.timeScale = 1;
         SceneManager.LoadScene("Menu");
         
     }

@@ -6,19 +6,23 @@ using UnityEngine.SceneManagement;
 
 public class MortePlayer : MonoBehaviour
 {
-
+    public GameObject morto;
     public Text tempo;
 
     public void Menu()
     {
-        SceneManager.LoadScene("Menu");
-        Time.timeScale = 1;
+        SceneManager.LoadScene("Menu");   
     }
 
     public void Setup(string minuti, string secondi)
     {
-        gameObject.SetActive(true);
+        morto.SetActive(true);
         tempo.text = minuti + ":" + secondi;
-        Time.timeScale = 0;
+        Invoke("FineGioco", 4);
+        }
+    void FineGioco()
+    {
+        morto.SetActive(false);
+        gameObject.SetActive(true);
     }
 }
