@@ -13,8 +13,9 @@ public class Capture : MonoBehaviour
     }
     public void ScreenShot()
     {
-        ScreenCapture.CaptureScreenshot("pippo.png", 2);
-        string destinazione = Path.Combine(Application.dataPath, "pippo.png");
+       // Directory.CreateDirectory(Application.persistentDataPath + "/appScreenshots");
+        ScreenCapture.CaptureScreenshot("pippo.png",2);
+        string destinazione = Path.Combine(Application.persistentDataPath, "pippo.png");
         Debug.Log(destinazione);
     }
 }
