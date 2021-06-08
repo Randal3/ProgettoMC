@@ -11,7 +11,7 @@ public class Wire_Game : MonoBehaviour
     private  GameObject rightc;
     private  GameObject leftc;
     public  GameObject cointer;
-    public AudioSource alarm;
+
 
     public bool but = false;
 
@@ -42,7 +42,6 @@ public class Wire_Game : MonoBehaviour
             win = true;
             
             Debug.Log("U WIN");
-            alarm.Stop();
            // Luci.luci = false;
             but = false;
             onCount = 0;

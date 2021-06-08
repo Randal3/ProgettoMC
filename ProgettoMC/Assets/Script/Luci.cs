@@ -20,7 +20,6 @@ public class Luci : MonoBehaviour
     {
         if (luci == true)
         {
-
             if(cont == 0)
             {
                 spegniLuci();
@@ -42,14 +41,14 @@ public class Luci : MonoBehaviour
             public void spegniLuci()
             {
                 Debug.Log("Sono qui");
-                for(int i = 0; i < 10; i++)
+                for(int i = 0; i < 7; i++)
                 {
                 GameObject.FindGameObjectWithTag("Luci").SetActive(false);
                 player.SetActive(true);
                 allarme.SetActive(true);
                 alarm.Play();
                 cont = 1;
-                 }
+                }
 
             }
 

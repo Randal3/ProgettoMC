@@ -7,6 +7,7 @@ public class VanishEnemy : MonoBehaviour
     public float time;
     public GameObject enemy;
     private Animator animator;
+    //per sapere se il mostro è attivo e spegnere le luci
 
     public MortePlayer fine;
 

@@ -21,7 +21,6 @@ public class Buttone : MonoBehaviour
 
     private void ButtonClicked()
     {
-        Debug.Log(Trigger.n);
         switch (Trigger.n)
         {
             case 1:

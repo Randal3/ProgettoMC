@@ -23,9 +23,11 @@ public class Indizio_trigger : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            Debug.Log("ciao");
             button_Indizio.gameObject.GetComponent<Image>().enabled = true;
             button_Indizio.gameObject.GetComponent<Button>().enabled = true;
-            indizio.gameObject.SetActive(true);
+            indizio.SetActive(true);
+            Debug.Log("ssciao");
         }
     }
 
@@ -35,7 +37,7 @@ public class Indizio_trigger : MonoBehaviour
         {
             button_Indizio.gameObject.GetComponent<Image>().enabled = false;
             button_Indizio.gameObject.GetComponent<Button>().enabled = false;
-            indizio.gameObject.SetActive(false);
+            indizio.SetActive(false);
         }
     }
 }

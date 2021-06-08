@@ -8,7 +8,7 @@ public class Trigger_button : MonoBehaviour
     public GameObject game;
     public GameObject but_ret; //pulsante di return
     private GameObject joystick;
-    public Camera camera;
+    public Camera camera1;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +20,7 @@ public class Trigger_button : MonoBehaviour
     {
         but_ret.SetActive(true);
         game.SetActive(true);
-        camera.enabled = false;
+        camera1.enabled = false;
         joystick.SetActive(false);
         gameObject.SetActive(false);
     }

@@ -14,7 +14,7 @@ public class DigitalDisplay : MonoBehaviour
 
     public GameObject enemy;
     public Transform spawn;
-
+    
     private GameObject gestoreIndovinelli;
     public int numeroIndovinello;
     public FineGioco finegioco;
@@ -130,7 +130,7 @@ public class DigitalDisplay : MonoBehaviour
         if (j < 10)
         {
             characters[j].sprite = digits[digitJustEntered];
-            Debug.Log(digitJustEntered);
+
             j++;
         }
         if (j == 10)
@@ -148,7 +148,7 @@ public class DigitalDisplay : MonoBehaviour
         }
         else
         {
-            Debug.Log("Wrong!");
+            
             ResetDisplay();
         }
     }

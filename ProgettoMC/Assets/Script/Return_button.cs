@@ -7,7 +7,7 @@ public class Return_button : MonoBehaviour
 {
     public GameObject game;
     public GameObject joystick;
-    public Camera camera;
+    public Camera camera1;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +18,7 @@ public class Return_button : MonoBehaviour
     private void ButtonClicked()
     {
         game.SetActive(false);
-        camera.enabled = true;
+        camera1.enabled = true;
         joystick.SetActive(true);
         gameObject.SetActive(false);
     }

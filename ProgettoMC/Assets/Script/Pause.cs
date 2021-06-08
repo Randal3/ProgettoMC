@@ -5,11 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
+    public Animator pausa;
     
     // Start is called before the first frame update
     public void Quit()
     {
+        Timer.Freeze = false;
+        Time.timeScale = 1;
         SceneManager.LoadScene("Menu");
+        
     }
 
     // Update is called once per frame
@@ -19,6 +23,7 @@ public class Pause : MonoBehaviour
         Debug.Log("Active");
         if (gameObject.activeSelf == true)
         {
+            pausa.SetTrigger("start");
             Timer.Freeze = false;
             Time.timeScale = 0;
         }
