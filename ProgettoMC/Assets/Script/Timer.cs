@@ -26,9 +26,10 @@ public class Timer : MonoBehaviour
         if (Timer.Freeze == true)
         {
             float t = Time.time - startTime;
-            minutes = ((int)t / 60).ToString();
-            seconds = (t % 60).ToString("f2");
-            TimerText.text = minutes + ":" + seconds;
+            float minutes = Mathf.FloorToInt(t / 60);
+            float seconds = Mathf.FloorToInt(t % 60);
+            string v = string.Format("{0:00}:{1:00}", minutes, seconds);
+            TimerText.text = v;
         }
     }
 }

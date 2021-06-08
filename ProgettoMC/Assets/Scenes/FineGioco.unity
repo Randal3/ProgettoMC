@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -157,7 +157,6 @@ MonoBehaviour:
   rowPrefab: {fileID: 195499347330098197, guid: c2cd1a71ce3c86e4c8803a3dfbcf78df,
     type: 3}
   rowsParent: {fileID: 1317768239}
-  tf: {fileID: 170771634}
   bottoneAggiornaClassifica: {fileID: 452826625}
   bottoneChiudiClassifica: {fileID: 1553752757}
   bottoneHome: {fileID: 1436908370}
@@ -453,7 +452,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe581763b5eb5144d9701fc821365be6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pf: {fileID: 12252855}
   text: {fileID: 170771632}
 --- !u!1 &198923993
 GameObject:
