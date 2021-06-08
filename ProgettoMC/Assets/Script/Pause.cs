@@ -12,6 +12,8 @@ public class Pause : MonoBehaviour
     {
         Timer.Freeze = false;
         Time.timeScale = 1;
+
+        Debug.Log("Quit:"+Time.timeScale);
         SceneManager.LoadScene("Menu");
         
     }
@@ -20,9 +22,10 @@ public class Pause : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("Active");
         if (gameObject.activeSelf == true)
         {
+            Debug.Log("sono attivo");
+            Debug.Log("Update:"+Time.timeScale);
             pausa.SetTrigger("start");
             Timer.Freeze = false;
             Time.timeScale = 0;
