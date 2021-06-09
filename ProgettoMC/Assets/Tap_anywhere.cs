@@ -34,7 +34,7 @@ public class Tap_anywhere : MonoBehaviour
         {
             timer = 0;
             splash.SetTrigger("splash");
-            Invoke("Aiuto", 1);
+            Invoke("Aiuto", 2);
         }    }
     void Aiuto()
     {
