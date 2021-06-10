@@ -5,15 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Mainmenu : MonoBehaviour
 {
-    public Animator sound;
-   public void OffAnimator()
+    public AudioSource sound;
+   
+    public void Fade()
     {
-        sound.enabled = false;
-    }
+        Debug.Log(sound.volume);
+        StartCoroutine(FadeAudioSource.FadeOut(sound, 3f));
+        Debug.Log("pippo");
 
-    public void OnAnimazione()
-    {
-        sound.enabled = true;
     }
     public void Quit()
     {

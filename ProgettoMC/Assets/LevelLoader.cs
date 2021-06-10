@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour
 {
     public Animator splash;
-    public Animator fade;
     public float transitionTime = 1f;
     bool second=true;
 
@@ -24,8 +23,6 @@ public class LevelLoader : MonoBehaviour
     {
         Debug.Log("Bello");
         splash.SetTrigger("start");
-        fade.SetTrigger("Fade");
-        
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
     IEnumerator LoadLevel(int levelIndex)
