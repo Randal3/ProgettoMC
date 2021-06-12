@@ -18,7 +18,10 @@ public class Timer : MonoBehaviour
     {
         startTime = Time.time;
     }
-
+    public void Awake()
+    {
+        Freeze = true;
+    }
     // Update is called once per frame
     void Update()
     {

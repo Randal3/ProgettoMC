@@ -6,14 +6,14 @@ using UnityEngine.SceneManagement;
 public class Mainmenu : MonoBehaviour
 {
     public AudioSource sound;
-   
+    private void Update()
+    {
+        Time.timeScale = 1;
+    }
     public void Fade()
     {
-        Debug.Log(sound.volume);
         StartCoroutine(FadeAudioSource.FadeOut(sound, 3f));
-        Debug.Log("pippo");
-
-    }
+   }
     public void Quit()
     {
         Application.Quit();
