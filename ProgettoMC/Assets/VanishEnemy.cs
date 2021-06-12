@@ -25,7 +25,7 @@ public class VanishEnemy : MonoBehaviour
         if (time >= 15)
         {
             animator.SetBool("death", true);
-            Invoke("Vanish", 2);
+            Invoke("Vanish", 1);
         }
     }
     void Vanish()
