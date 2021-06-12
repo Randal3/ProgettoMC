@@ -23,8 +23,8 @@ public class PlayerMovement : MonoBehaviour
     {
         change.x = joystick.Horizontal;
         change.y = joystick.Vertical;
-        //change.x = Input.GetAxisRaw("Horizontal");
-        //change.y = Input.GetAxisRaw("Vertical");
+        change.x = Input.GetAxisRaw("Horizontal");
+        change.y = Input.GetAxisRaw("Vertical");
         if (change != Vector3.zero) {
             animator.SetFloat("X", change.x);
             animator.SetFloat("Y", change.y);
