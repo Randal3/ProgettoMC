@@ -6,6 +6,7 @@ public class RamdomRain : MonoBehaviour
 {
     public GameObject rain;
     private GameObject rainclone;
+    public GameObject container;
     int i=0;
     private float InstantiationTimer = 0.5f;
     // Start is called before the first frame update
@@ -22,6 +23,7 @@ public class RamdomRain : MonoBehaviour
         i++;
             randomVec = new Vector2(Random.Range(-10, 10), Random.Range(-10, 10));
              rainclone = Instantiate(rain, randomVec, Quaternion.identity);
+        rainclone.transform.parent = container.transform;
         rainclone.SetActive(true);
             rainclone.name = "rainClone" + i;
         //Invoke("RainDestroy", 0.2f);
