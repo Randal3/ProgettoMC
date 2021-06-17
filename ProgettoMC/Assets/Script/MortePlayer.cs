@@ -16,6 +16,7 @@ public class MortePlayer : MonoBehaviour
 
     public void Setup(string minuti, string secondi)
     {
+        Luci.luci = false;
         morto.SetActive(true);
         tempo.text = minuti + ":" + secondi;
         Invoke("FineGioco", 4);

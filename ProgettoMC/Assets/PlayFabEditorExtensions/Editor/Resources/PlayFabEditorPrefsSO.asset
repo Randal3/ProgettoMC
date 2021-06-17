@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d0199c11aa6f514784c5c69cd8378d8, type: 3}
   m_Name: PlayFabEditorPrefsSO
   m_EditorClassIdentifier: 
-  DevAccountEmail: enigma.games@outlook.it
-  DevAccountToken: ritrns6wz9sjaqqwbwcw1coro15z4i91kxk9q9efyziai8uhuyjx53go6797suy8tuzwuwj8qcyxg4i6xsuxmotjaciy9ehu8wnd5gexyg54gww9xgker8xzm8tfg1d4dgg9bq1oa75s3hin18ja6eeyacjpud6gno7umhwb9xtc1zzu5q3dymyknep8wwf8neqgiqy7
-  SelectedStudio: En?gma Games
-  SdkPath: Assets/PlayFabSDK
+  DevAccountEmail: 
+  DevAccountToken: 
+  SelectedStudio: 
+  SdkPath: 
   EdExPath: 
   LocalCloudScriptPath: 
   PanelIsShown: 0
-  curMainMenuIdx: 1
+  curMainMenuIdx: 0
   curSubMenuIdx: 0
