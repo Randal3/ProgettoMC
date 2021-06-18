@@ -39,9 +39,10 @@ public class VanishEnemy : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            string minutes = Timer.minutes;
-            string seconds = Timer.seconds;
-            fine.Setup(minutes, seconds);
+           // string minutes = Timer.minutes;
+           // string seconds = Timer.seconds;
+            Debug.Log(Timer.v);
+            fine.Setup(Timer.v);
         }
     }
 }

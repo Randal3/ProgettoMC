@@ -26,7 +26,7 @@ public class Share : MonoBehaviour
 
 	public void OnShareButtonClick()
 	{
-		timer = Timer.minutes + ":" + Timer.seconds;
+		timer = Timer.v;
 		Debug.Log("1");
 		screenshotName = "Funziona.png";
 		shareSubject = "I challenge you to beat my time in The Cursed";

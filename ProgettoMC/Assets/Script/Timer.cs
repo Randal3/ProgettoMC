@@ -8,8 +8,7 @@ public class Timer : MonoBehaviour
     public Text TimerText;
     private float startTime;
 
-    public static string minutes;
-    public static string seconds;
+    public static string v;
 
     public MortePlayer fine;
     public static bool Freeze = true;
@@ -31,7 +30,7 @@ public class Timer : MonoBehaviour
             float t = Time.time - startTime;
             float minutes = Mathf.FloorToInt(t / 60);
             float seconds = Mathf.FloorToInt(t % 60);
-            string v = string.Format("{0:00}:{1:00}", minutes, seconds);
+            v = string.Format("{0:00}:{1:00}", minutes, seconds);
             TimerText.text = v;
         }
     }

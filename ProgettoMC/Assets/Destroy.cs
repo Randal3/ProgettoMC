@@ -11,7 +11,6 @@ public class Destroy : MonoBehaviour
     }
     public void Rain()
     {
-        Debug.Log("distrutto");
         Destroy(gameObject);
     }
 }

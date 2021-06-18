@@ -8,7 +8,6 @@ public class RandomRain2 : MonoBehaviour
     private GameObject rainclone;
     public GameObject container;
     int i = 0;
-    private float InstantiationTimer = 0.5f;
     // Start is called before the first frame update
     Vector2 randomVec;
 

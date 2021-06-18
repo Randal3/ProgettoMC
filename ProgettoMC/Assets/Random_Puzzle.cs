@@ -16,7 +16,6 @@ public class Random_Puzzle : MonoBehaviour
     {
         for(int i = 0; i < 9; i++)
         {
-            Debug.Log(i);
             pictures[i].Rotate(0,0, angle[Random.Range(0, 3)]);
         }
     }

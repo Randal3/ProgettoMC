@@ -14,11 +14,11 @@ public class MortePlayer : MonoBehaviour
         SceneManager.LoadScene("Menu");   
     }
 
-    public void Setup(string minuti, string secondi)
+    public void Setup(string v)
     {
         Luci.luci = false;
         morto.SetActive(true);
-        tempo.text = minuti + ":" + secondi;
+        tempo.text = v;
         Invoke("FineGioco", 4);
         }
     void FineGioco()
