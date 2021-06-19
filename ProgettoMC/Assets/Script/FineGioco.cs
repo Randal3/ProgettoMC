@@ -8,7 +8,6 @@ public class FineGioco : MonoBehaviour
 {
     public Gestore_Indovinelli gestoreIndovinelli;
     public GameObject fuga;
-    public GameObject haiFinito;
     public Text timer;
     public static string tempoFinale;
     
@@ -32,7 +31,7 @@ public class FineGioco : MonoBehaviour
         if (isFinito)
         {
             this.fuga.SetActive(true);
-            this.haiFinito.SetActive(true);
+            
         }
     }
 
