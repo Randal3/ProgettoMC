@@ -6,7 +6,6 @@ public class BoxAppoggio : MonoBehaviour
 {
     public string Tag;
     public string nuovoTag;
-    //private bool active;
     private int completo = 0;
     public bool indovinelloFinito = false;
     public GameObject libro2;
@@ -69,15 +68,7 @@ public class BoxAppoggio : MonoBehaviour
         if (completo == 3)
         {
             if (cont == 0) {
-                enemy.transform.position = spawn.transform.position;
-                enemy.SetActive(true);
-                indovinelloFinito = true;
-
-                gestoreIndovinelli.GetComponent<Gestore_Indovinelli>().setIndovinelli(numeroIndovinello);
-                finegioco.GetComponent<FineGioco>().FinisciGioco();
-
-                Luci.luci = true;
-                cont++;
+                fine();
             }
         }
     }
@@ -93,16 +84,28 @@ public class BoxAppoggio : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             bottone.SetActive(false);
-            //this.active = true;
         }
     }
 
-    public void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && BottoneInterazione.preso != true)
         {
-            //this.active = false;
+            bottone.SetActive(false);
         }
+    }
+
+    public void fine() 
+    {
+        enemy.transform.position = spawn.transform.position;
+        enemy.SetActive(true);
+        indovinelloFinito = true;
+
+        gestoreIndovinelli.GetComponent<Gestore_Indovinelli>().setIndovinelli(numeroIndovinello);
+        finegioco.GetComponent<FineGioco>().FinisciGioco();
+
+        Luci.luci = true;
+        cont++;
     }
 
 }
