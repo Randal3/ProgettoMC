@@ -7,7 +7,7 @@ public class BoxAppoggio : MonoBehaviour
     public string Tag;
     public string nuovoTag;
     private int completo = 0;
-    public bool indovinelloFinito = false;
+    public static bool indovinelloFinito;
     public GameObject libro2;
     public GameObject libro3;
     public Transform holder1;

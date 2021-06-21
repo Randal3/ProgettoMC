@@ -17,8 +17,8 @@ public class Keypad : MonoBehaviour
     public GameObject on;
     public GameObject off;
     public Transform spawn;
-    
 
+    public static bool Finito;
     private GameObject gestoreIndovinelli;
     public int numeroIndovinello;
     public FineGioco finegioco;
@@ -120,7 +120,7 @@ public class Keypad : MonoBehaviour
         game.SetActive(false);
         enemy.transform.position = spawn.transform.position;
         enemy.SetActive(true);
-
+        Finito = true;
         gestoreIndovinelli.GetComponent<Gestore_Indovinelli>().setIndovinelli(numeroIndovinello);
         finegioco.GetComponent<FineGioco>().FinisciGioco();
 

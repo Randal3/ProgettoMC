@@ -8,11 +8,12 @@ public class Nasconditi_bottone : MonoBehaviour
 {
     public GameObject analogico;
     public Transform nascondiglio;
-    public Transform player_posizione;
+    public GameObject player;
     public GameObject bottone;
     public Transform posizioneDaRicordare;
     private GameObject esci;
     public AudioSource mostro;
+
 
     // Start is called before the first frame update
     void Start()
@@ -29,10 +30,11 @@ public class Nasconditi_bottone : MonoBehaviour
 
     private void ButtonClicked()
     {
-        this.posizioneDaRicordare.position = this.player_posizione.position;
+        this.posizioneDaRicordare.position = this.player.transform.position;
         analogico.SetActive(false);
         mostro.spatialBlend = 0;
-        this.player_posizione.position = this.nascondiglio.position;
+        this.player.transform.position = this.nascondiglio.position;
+        this.player.GetComponent<SpriteRenderer>().enabled = false;
         esci.gameObject.GetComponent<Image>().enabled = true;
         esci.gameObject.GetComponent<Button>().enabled = true;
         SoundManager.PlaySound("entra");

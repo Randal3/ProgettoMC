@@ -7,7 +7,7 @@ public class Bottone_EsciDaArmadietto : MonoBehaviour
 {
     public GameObject analogico;
     public GameObject bottone;
-    public Transform player_posizione;
+    public GameObject player;
     private Transform ultima_posizione;
     private GameObject esci;
     public AudioSource mostro;
@@ -29,7 +29,8 @@ public class Bottone_EsciDaArmadietto : MonoBehaviour
     private void ButtonClicked()
     {
         this.ultima_posizione = GameObject.Find("Last_Player_Position").transform;
-        this.player_posizione.position = this.ultima_posizione.position;
+        this.player.transform.position = this.ultima_posizione.position;
+        this.player.GetComponent<SpriteRenderer>().enabled = true;
         mostro.spatialBlend = 1;
         analogico.SetActive(true);
         esci.gameObject.GetComponent<Image>().enabled = false;

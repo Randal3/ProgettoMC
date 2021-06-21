@@ -11,7 +11,7 @@ public class DigitalDisplay : MonoBehaviour
     public GameObject game;
     private string codeSequences;
     int j = 0;
-
+    public static bool Finito;
     public GameObject enemy;
     public Transform spawn;
     
@@ -158,6 +158,7 @@ public class DigitalDisplay : MonoBehaviour
         game.SetActive(false);
         enemy.transform.position = spawn.transform.position;
         enemy.SetActive(true);
+        Finito = true;
 
         gestoreIndovinelli.GetComponent<Gestore_Indovinelli>().setIndovinelli(numeroIndovinello);
         finegioco.GetComponent<FineGioco>().FinisciGioco();

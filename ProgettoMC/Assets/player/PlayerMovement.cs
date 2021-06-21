@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 0.2f;
+    public float speed = 0.15f;
     private Rigidbody2D myRigidbody;
     private Vector3 change;
     private Animator animator;
@@ -44,13 +44,4 @@ public class PlayerMovement : MonoBehaviour
         myRigidbody.MovePosition(transform.position + change * speed);
          
     }
-    /*
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("enemy"))
-        {
-            Debug.Log("sei morto");
-            fine.Setup();
-        }
-    }*/
 }
