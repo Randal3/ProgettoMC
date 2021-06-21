@@ -14,6 +14,8 @@ public class Keypad : MonoBehaviour
     public Quadro_Randomico daDovePrendoSoluzione;
     private string soluzione;
     public GameObject enemy;
+    public GameObject on;
+    public GameObject off;
     public Transform spawn;
     
 
@@ -102,13 +104,13 @@ public class Keypad : MonoBehaviour
     {
         if (codeSequences == soluzione)
         {
-
+            on.SetActive(true);
             Debug.Log("Correct!");
             Invoke("Correct", 0.5f);
         }
         else
         {
-
+            off.SetActive(true);
             Invoke("ResetDisplay", 0.5f);
         }
     }
@@ -130,6 +132,7 @@ public class Keypad : MonoBehaviour
             characters[i].sprite = digits[10];
         }
         codeSequences = "";
+        off.SetActive(false);
         j = 0;
     }
     private void OnDestroy()

@@ -8,6 +8,7 @@ public class Luci : MonoBehaviour
     public GameObject corridoio;
     public GameObject player;
     public AudioSource alarm;
+    public BoxCollider2D wireTask;
     public GameObject allarme;
     int cont = 0;
     // Start is called before the first frame update
@@ -33,6 +34,7 @@ public class Luci : MonoBehaviour
                 GameObject.FindGameObjectWithTag("Luci").SetActive(true);
                 player.SetActive(false);
                 allarme.SetActive(false);
+                wireTask.enabled = false;
                 
                 cont = 0;
             }
@@ -46,6 +48,7 @@ public class Luci : MonoBehaviour
                 GameObject.FindGameObjectWithTag("Luci").SetActive(false);
                 player.SetActive(true);
                 allarme.SetActive(true);
+            wireTask.enabled = true;
                 alarm.Play();
                 cont = 1;
                 }
