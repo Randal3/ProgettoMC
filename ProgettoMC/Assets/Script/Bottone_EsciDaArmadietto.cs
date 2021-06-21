@@ -10,6 +10,7 @@ public class Bottone_EsciDaArmadietto : MonoBehaviour
     public Transform player_posizione;
     private Transform ultima_posizione;
     private GameObject esci;
+    public AudioSource mostro;
 
 
     // Start is called before the first frame update
@@ -29,6 +30,7 @@ public class Bottone_EsciDaArmadietto : MonoBehaviour
     {
         this.ultima_posizione = GameObject.Find("Last_Player_Position").transform;
         this.player_posizione.position = this.ultima_posizione.position;
+        mostro.spatialBlend = 1;
         analogico.SetActive(true);
         esci.gameObject.GetComponent<Image>().enabled = false;
         esci.gameObject.GetComponent<Button>().enabled = false;
