@@ -50,8 +50,8 @@ public class Soluzione : MonoBehaviour
             finegioco.GetComponent<FineGioco>().FinisciGioco();
 
                 enemy.transform.position = spawn.transform.position;
-
-                enemy.SetActive(true);
+            SoundManager.PlaySound("libreria");
+            enemy.SetActive(true);
                 libro1.SetActive(true);
                 Debug.Log("Soluzione");
                 Luci.luci = true;

@@ -12,7 +12,6 @@ public class Thunder : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        Debug.Log("spawn: " + spawntime);
         if ((time>=spawntime))
         {
             Debug.Log("Thunder");
