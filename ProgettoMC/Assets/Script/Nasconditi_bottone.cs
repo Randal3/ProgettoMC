@@ -32,6 +32,7 @@ public class Nasconditi_bottone : MonoBehaviour
         this.posizioneDaRicordare.position = this.player_posizione.transform.position;
         analogico.SetActive(false);
         mostro.spatialBlend = 0;
+        mostro.volume = 0.7f;
         this.player_posizione.transform.position = this.nascondiglio.position;
         esci.gameObject.GetComponent<Image>().enabled = true;
         esci.gameObject.GetComponent<Button>().enabled = true;

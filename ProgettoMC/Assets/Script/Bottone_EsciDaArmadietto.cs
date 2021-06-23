@@ -32,6 +32,7 @@ public class Bottone_EsciDaArmadietto : MonoBehaviour
         this.player.transform.position = this.ultima_posizione.position;
         this.player.GetComponent<SpriteRenderer>().enabled = true;
         mostro.spatialBlend = 1;
+        mostro.volume = 1;
         analogico.SetActive(true);
         esci.gameObject.GetComponent<Image>().enabled = false;
         esci.gameObject.GetComponent<Button>().enabled = false;
