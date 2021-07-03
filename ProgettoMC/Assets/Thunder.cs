@@ -14,7 +14,7 @@ public class Thunder : MonoBehaviour
         time += Time.deltaTime;
         if ((time>=spawntime))
         {
-            Debug.Log("Thunder");
+
             StartCoroutine(FlickeringLight());
         }
     }
