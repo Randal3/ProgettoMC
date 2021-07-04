@@ -55,8 +55,8 @@ public class Soluzione : MonoBehaviour
                 Debug.Log("Soluzione");
                 Luci.luci = true;
                 cont = false;
-
-            SoundManager.PlaySound("libreria");
+            Sound.Mauro("libreria");
+            //SoundManager.PlaySound("libreria");
 
 
         }

@@ -37,6 +37,7 @@ public class Nasconditi_bottone : MonoBehaviour
         esci.gameObject.GetComponent<Image>().enabled = true;
         esci.gameObject.GetComponent<Button>().enabled = true;
         player_posizione.GetComponent<SpriteRenderer>().enabled=false;
-        SoundManager.PlaySound("entra");
+        Sound.Mauro("entra");
+        //SoundManager.PlaySound("entra");
     }
 }

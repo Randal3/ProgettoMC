@@ -12,7 +12,8 @@ public class AnimazioneCancello : MonoBehaviour
     {
         if ((BoxAppoggio.indovinelloFinito && Keypad.Finito) || DigitalDisplay.Finito)
         {
-            SoundManager.PlaySound("cancello");
+            Sound.Mauro("cancello");
+            //SoundManager.PlaySound("cancello");
             aperto.SetActive(true);
             chiuso.SetActive(false);
         }

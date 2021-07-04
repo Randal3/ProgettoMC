@@ -8,7 +8,7 @@ public class SoundManager : MonoBehaviour
     public static AudioClip entraSound, esciSound, heavyBreathing,libreria,cancello;
     static AudioSource audioSrc;
 
-    // Start is called before the first frame update
+
     void Start()
     {
         entraSound = Resources.Load<AudioClip>("entraSound");
@@ -19,10 +19,6 @@ public class SoundManager : MonoBehaviour
         audioSrc = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
-    { 
-    }
 
     public static void PlaySound(string clip)
     {
@@ -40,6 +36,7 @@ public class SoundManager : MonoBehaviour
                 audioSrc.PlayOneShot(libreria);
                 break;
             case "cancello":
+                Debug.Log("pippo");
                 audioSrc.PlayOneShot(cancello);
                 break;
         }
