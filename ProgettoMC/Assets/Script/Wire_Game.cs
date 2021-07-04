@@ -17,7 +17,6 @@ public class Wire_Game : MonoBehaviour
 
     public bool win = false;
     public int switchCount;
-    //public GameObject winText;
     private int onCount = 0;
     void Awake()
     {
@@ -40,16 +39,12 @@ public class Wire_Game : MonoBehaviour
         if (onCount == switchCount && but == true)
         {
             win = true;
-            
-            Debug.Log("U WIN");
-           // Luci.luci = false;
             but = false;
             onCount = 0;
         }
     }
     public void Clone()
     {
-            Debug.Log("SEi forte");
             rightc= Instantiate(right,right.transform.position, right.transform.localRotation);
             leftc = Instantiate(left,left.transform);
             rightc.transform.parent = cointer.transform;

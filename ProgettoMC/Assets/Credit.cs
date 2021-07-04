@@ -25,8 +25,6 @@ public class Credit : MonoBehaviour
     // Update is called once per frame
     void Awake()
     {
-        Debug.Log("pippo");
-       // credits.SetTrigger("pippo");
         Invoke("ToBeContinued", 19f);
     }
     void ToBeContinued()

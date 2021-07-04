@@ -11,7 +11,7 @@ public class AnimazioneCancello : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (((BoxAppoggio.indovinelloFinito && Keypad.Finito) || DigitalDisplay.Finito) && count)
+        if (BoxAppoggio.indovinelloFinito && Keypad.Finito && DigitalDisplay.Finito && count)
         {
             Sound.Mauro("cancello");
             //SoundManager.PlaySound("cancello");

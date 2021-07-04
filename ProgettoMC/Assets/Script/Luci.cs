@@ -42,7 +42,6 @@ public class Luci : MonoBehaviour
     }
             public void spegniLuci()
             {
-                Debug.Log("Sono qui");
                 for(int i = 0; i < 7; i++)
                 {
                 GameObject.FindGameObjectWithTag("Luci").SetActive(false);

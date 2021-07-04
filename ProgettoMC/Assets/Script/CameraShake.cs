@@ -7,14 +7,12 @@ public class CameraShake : MonoBehaviour
     Vector3 cameraPosition;
     public float ShakeMagnitude = 0.05f, ShakeTime = 0.5f;
     public Camera maincamera;
-    public BoxCollider2D Fine;
     public GameObject enemy;
     public Transform spawn;
 
 
     public void Shakeit()
     {
-        Fine.enabled = true;
         cameraPosition = maincamera.transform.position;
         InvokeRepeating("StartCameraShaking", 0f, 0.005f);
         Invoke("StopCameraShaking", ShakeTime);

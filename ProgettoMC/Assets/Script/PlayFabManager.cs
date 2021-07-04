@@ -150,7 +150,6 @@ public class PlayFabManager : MonoBehaviour
 
     string intToTime(string score)
     {
-        Debug.Log(score);
         string result = "00:00";
         char[] resultAsChars = result.ToCharArray();
         int chars = score.Length;

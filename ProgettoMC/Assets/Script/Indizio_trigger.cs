@@ -14,20 +14,13 @@ public class Indizio_trigger : MonoBehaviour
         button_Indizio = GameObject.Find("Indizio");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("ciao");
             button_Indizio.gameObject.GetComponent<Image>().enabled = true;
             button_Indizio.gameObject.GetComponent<Button>().enabled = true;
             indizio.SetActive(true);
-            Debug.Log("ssciao");
         }
     }
 

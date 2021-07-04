@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class DigitalDisplay : MonoBehaviour
 {
-    // Start is called before the first frame update
     [SerializeField] private Sprite[] digits;
     [SerializeField] private Image[] characters;
     public GameObject game;
@@ -22,17 +21,12 @@ public class DigitalDisplay : MonoBehaviour
     void Start()
     {
         codeSequences = "";
-       /* for (int i=0; i <= characters.Length - 1; i++)
-        {
-            characters[i].sprite = digits[5];
-        }*/
         PushTheButton.ButtonPressed += AddDigitToCodeSequences;
 
         gestoreIndovinelli = GameObject.Find("RiddlesControl");
     }
     private void AddDigitToCodeSequences(string digitEntered)
     {
-        Debug.Log("22");
         if (codeSequences.Length < 20)
         {
             switch (digitEntered)
@@ -142,8 +136,6 @@ public class DigitalDisplay : MonoBehaviour
     {
         if (codeSequences == "10013130101211312" )
         {
-            
-            Debug.Log("Correct!");
             Invoke("Correct", 0.5f);
         }
         else
@@ -162,7 +154,7 @@ public class DigitalDisplay : MonoBehaviour
 
         gestoreIndovinelli.GetComponent<Gestore_Indovinelli>().setIndovinelli(numeroIndovinello);
         finegioco.GetComponent<FineGioco>().FinisciGioco();
-
+        gameObject.SetActive(false);
     }
     private void ResetDisplay()
     {

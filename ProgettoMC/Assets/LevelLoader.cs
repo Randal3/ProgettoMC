@@ -10,8 +10,7 @@ public class LevelLoader : MonoBehaviour
     bool second=true;
 
     void Update()
-    {
-        
+    {     
         if (SceneManager.GetActiveScene().name == "SampleScene" && second)
         {
             
@@ -21,7 +20,6 @@ public class LevelLoader : MonoBehaviour
     }
     public void LoadGame()
     {
-        Debug.Log("Bello");
         splash.SetTrigger("start");
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
@@ -32,7 +30,5 @@ public class LevelLoader : MonoBehaviour
         second = true;
         
         SceneManager.LoadScene(levelIndex);
-
-
     }
 }
