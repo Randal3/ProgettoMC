@@ -49,13 +49,14 @@ public class Soluzione : MonoBehaviour
             gestoreIndovinelli.GetComponent<Gestore_Indovinelli>().setIndovinelli(numeroIndovinello);
             finegioco.GetComponent<FineGioco>().FinisciGioco();
 
-                enemy.transform.position = spawn.transform.position;
-            SoundManager.PlaySound("libreria");
+            enemy.transform.position = spawn.transform.position;
             enemy.SetActive(true);
                 libro1.SetActive(true);
                 Debug.Log("Soluzione");
                 Luci.luci = true;
                 cont = false;
+
+            SoundManager.PlaySound("libreria");
 
 
         }
