@@ -35,11 +35,10 @@ public class Sound : MonoBehaviour
                 music.PlayOneShot(libreria);
                 break;
             case "cancello":
-                Debug.Log("pippo");
                 music.PlayOneShot(cancello);
                 break;
         }
 
     }
-    }
+    
 }
