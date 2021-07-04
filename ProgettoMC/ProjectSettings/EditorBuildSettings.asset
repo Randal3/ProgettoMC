@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FineGioco.unity
     guid: 99f161ef03ac8354b94e9df3d37449ee
+  - enabled: 1
+    path: Assets/Scenes/ToBeContinued.unity
+    guid: 276a15860091e2a45a4895fb050322cd
   m_configObjects: {}
