@@ -15,7 +15,7 @@ public class Trigger : MonoBehaviour
             button.SetActive(true);
             n = 1;
         }
-        else if(collision.gameObject.name == "Object1")
+        else if(collision.gameObject.name == "Display")
         {
             button.SetActive(true);
             n = 2;
