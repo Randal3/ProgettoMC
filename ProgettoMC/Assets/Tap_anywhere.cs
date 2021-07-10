@@ -16,7 +16,6 @@ public class Tap_anywhere : MonoBehaviour
     void Update()
     {
         Time.timeScale = 1;
-        Debug.Log("WHY");
         Debug.Log(timer +=  Time.deltaTime);
         Debug.Log(Time.timeScale);
         timer +=  Time.deltaTime;
@@ -43,4 +42,5 @@ public class Tap_anywhere : MonoBehaviour
         Menu.SetActive(true);
         
     }
+ 
 }
